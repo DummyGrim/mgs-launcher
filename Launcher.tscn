@@ -1,0 +1,4717 @@
+[gd_scene load_steps=155 format=2]
+
+[ext_resource path="res://Launcher.gd" type="Script" id=1]
+[ext_resource path="res://Textures/IMG_421823.png" type="Texture" id=2]
+[ext_resource path="res://Textures/metal_gear_solid_2_wallpaper_hd__by_big_boss1996_by_outer_heaven1974_d4vgz7p-pre.jpeg" type="Texture" id=3]
+[ext_resource path="res://Textures/8i2hgv3w6fbx.png" type="Texture" id=4]
+[ext_resource path="res://Textures/2e1bfe884081c18c96c7bf180563bdb1.jpeg" type="Texture" id=5]
+[ext_resource path="res://GamesGroup.tres" type="ButtonGroup" id=6]
+[ext_resource path="res://Titles/MgsvTitle.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Titles/Mgs3Title.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Shaders/Blur.gdshader" type="Shader" id=9]
+[ext_resource path="res://Titles/Mgs2Title.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Titles/MgspwTitle.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Titles/MgsgzTitle.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Titles/MgsTitle.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Titles/Mgs4Title.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Titles/Mgs1Title.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Textures/tpp_logo.png" type="Texture" id=16]
+[ext_resource path="res://Sway.tscn" type="PackedScene" id=17]
+[ext_resource path="res://Menu/GameTracks.gd" type="Script" id=18]
+[ext_resource path="res://Textures/640471.png" type="Texture" id=26]
+[ext_resource path="res://Textures/before-mgs1-solid-snake-never-had-a-consistent-design-but-v0-sp6xhvui7ak91.jpeg" type="Texture" id=27]
+[ext_resource path="res://Textures/30576p7.jpeg" type="Texture" id=28]
+[ext_resource path="res://Textures/MGSV-GZ-Shinkawa-Art-Famitsu.jpeg" type="Texture" id=29]
+[ext_resource path="res://LoadingScreen.tscn" type="PackedScene" id=32]
+[ext_resource path="res://Textures/SeekPng.com_soft-png_4221431.png" type="Texture" id=34]
+[ext_resource path="res://Menu/Menu.tscn" type="PackedScene" id=35]
+[ext_resource path="res://Menu/MenuGroup.tres" type="ButtonGroup" id=36]
+[ext_resource path="res://Font/Launcher.tres" type="Theme" id=40]
+[ext_resource path="res://Menu/TrackButton.gd" type="Script" id=41]
+[ext_resource path="res://Menu/Menu.tres" type="Animation" id=42]
+[ext_resource path="res://Font/helvetica_condensed_bold.ttf" type="DynamicFontData" id=43]
+[ext_resource path="res://Textures/1280px-Dualshock_4_Layout.png" type="Texture" id=44]
+[ext_resource path="res://Menu/VSlider.gd" type="Script" id=45]
+[ext_resource path="res://Textures/c481ea1fe4aae0944dbc6cafb5dec786white.png" type="Texture" id=46]
+[ext_resource path="res://Textures/cea735b5027e1808f8c3960cc30a7210whitw.png" type="Texture" id=47]
+[ext_resource path="res://Textures/44a1266e4d281aaef1704b6e60524cce.png" type="Texture" id=48]
+[ext_resource path="res://Textures/d0dcbef5a8ea4e3440294882ca3d7cfbwhite.png" type="Texture" id=49]
+[ext_resource path="res://Textures/1f4ba4027d25906363144a8b5767b3c9.png" type="Texture" id=50]
+[ext_resource path="res://Textures/1200px-Metal_Gear_Solid_logo.png" type="Texture" id=51]
+[ext_resource path="res://Textures/72ed51c0351c080b21275e36ca9ce194.png" type="Texture" id=52]
+[ext_resource path="res://Textures/gz_logo_sp.png" type="Texture" id=53]
+[ext_resource path="res://Font/Soundtrack.tres" type="Theme" id=54]
+[ext_resource path="res://Menu/TrackGroup.tres" type="ButtonGroup" id=69]
+[ext_resource path="res://GamePath.gd" type="Script" id=112]
+
+[sub_resource type="StyleBoxEmpty" id=20]
+
+[sub_resource type="StyleBoxEmpty" id=21]
+
+[sub_resource type="StyleBoxEmpty" id=26]
+
+[sub_resource type="StyleBoxEmpty" id=23]
+
+[sub_resource type="StyleBoxEmpty" id=24]
+
+[sub_resource type="Animation" id=36]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -237, 165 ) ]
+}
+
+[sub_resource type="Animation" id=37]
+resource_name = "SLIDE"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 0.5, 2 ),
+"update": 0,
+"values": [ Vector2( -237, 165 ), Vector2( 11, 165 ) ]
+}
+
+[sub_resource type="StyleBoxEmpty" id=10]
+
+[sub_resource type="StyleBoxEmpty" id=11]
+
+[sub_resource type="StyleBoxEmpty" id=12]
+
+[sub_resource type="StyleBoxEmpty" id=13]
+
+[sub_resource type="StyleBoxEmpty" id=14]
+
+[sub_resource type="Animation" id=32]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -277, 80 ) ]
+}
+
+[sub_resource type="Animation" id=33]
+resource_name = "SLIDE"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 0.5, 2 ),
+"update": 0,
+"values": [ Vector2( -277, 80 ), Vector2( 20, 81 ) ]
+}
+
+[sub_resource type="StyleBoxEmpty" id=15]
+
+[sub_resource type="StyleBoxEmpty" id=16]
+
+[sub_resource type="StyleBoxEmpty" id=25]
+
+[sub_resource type="StyleBoxEmpty" id=18]
+
+[sub_resource type="StyleBoxEmpty" id=19]
+
+[sub_resource type="Animation" id=34]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 320, -95 ) ]
+}
+
+[sub_resource type="Animation" id=35]
+resource_name = "SLIDE"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 0.5, 2 ),
+"update": 0,
+"values": [ Vector2( 320, -95 ), Vector2( 320, 93 ) ]
+}
+
+[sub_resource type="StyleBoxEmpty" id=5]
+
+[sub_resource type="StyleBoxEmpty" id=6]
+
+[sub_resource type="StyleBoxEmpty" id=7]
+
+[sub_resource type="StyleBoxEmpty" id=8]
+
+[sub_resource type="StyleBoxEmpty" id=9]
+
+[sub_resource type="Animation" id=30]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 264, 271.573 ) ]
+}
+
+[sub_resource type="Animation" id=31]
+resource_name = "SLIDE"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 0.5, 2 ),
+"update": 0,
+"values": [ Vector2( 264, 271.573 ), Vector2( 264, 213.943 ) ]
+}
+
+[sub_resource type="Animation" id=40]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -32, -62 ) ]
+}
+
+[sub_resource type="Animation" id=41]
+resource_name = "SLIDE"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 0.5, 2 ),
+"update": 0,
+"values": [ Vector2( -32, -62 ), Vector2( -32, 92 ) ]
+}
+
+[sub_resource type="Animation" id=44]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 350 ) ]
+}
+
+[sub_resource type="Animation" id=45]
+resource_name = "SLIDE"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 0.5, 2 ),
+"update": 0,
+"values": [ Vector2( 0, 350 ), Vector2( 0, 157 ) ]
+}
+
+[sub_resource type="Animation" id=38]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 288, 361.994 ) ]
+}
+
+[sub_resource type="Animation" id=39]
+resource_name = "SLIDE"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 0.5, 2 ),
+"update": 0,
+"values": [ Vector2( 288, 361.994 ), Vector2( 288, 282.503 ) ]
+}
+
+[sub_resource type="Animation" id=42]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 635, 88 ) ]
+}
+
+[sub_resource type="Animation" id=43]
+resource_name = "SLIDE"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 0.5, 2 ),
+"update": 0,
+"values": [ Vector2( 636, 87 ), Vector2( 337, 87 ) ]
+}
+
+[sub_resource type="Animation" id=162]
+resource_local_to_scene = true
+resource_name = "CLOSE"
+tracks/0/type = "value"
+tracks/0/path = NodePath("OpeningCamera/Sprite:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 2, 2, 2 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("OpeningCamera/Sprite:self_modulate")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.5, 1 ),
+"transitions": PoolRealArray( 2, 2 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("AudioStreamPlayer2:volume_db")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 2, 0.5 ),
+"update": 0,
+"values": [ 0.0, -80.0 ]
+}
+tracks/3/type = "method"
+tracks/3/path = NodePath(".")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 1 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "exit"
+} ]
+}
+tracks/4/type = "method"
+tracks/4/path = NodePath(".")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray(  ),
+"transitions": PoolRealArray(  ),
+"values": [  ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Camera2D2:current")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("OpeningCamera:current")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0.5 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=163]
+resource_local_to_scene = true
+resource_name = "OPEN"
+tracks/0/type = "value"
+tracks/0/path = NodePath("OpeningCamera/Sprite:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 2, 2, 2 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("OpeningCamera/Sprite:self_modulate")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 2, 2 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.8 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "start"
+} ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("AudioStreamPlayer2:volume_db")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 0.5, 2 ),
+"update": 0,
+"values": [ -80.0, 0.0 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("OpeningCamera:current")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Camera2D2:current")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0.5 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Shader" id=46]
+code = "shader_type canvas_item;
+
+uniform float whitening;
+
+void fragment() {
+    vec4 texture_color = texture(TEXTURE, UV);
+    COLOR = vec4(mix(texture_color.rgb, vec3(1,1,1), whitening), texture_color.a);
+}"
+
+[sub_resource type="ShaderMaterial" id=47]
+shader = SubResource( 46 )
+shader_param/whitening = 1.0
+
+[sub_resource type="ShaderMaterial" id=49]
+shader = ExtResource( 9 )
+shader_param/lod = 0.7
+
+[sub_resource type="Animation" id=78]
+resource_name = "MenuChange"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/path = NodePath("TextureRect:rect_position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 2, 1 ),
+"update": 0,
+"values": [ Vector2( 87, 0 ), Vector2( 87, -150 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("ColorRect:texture:gradient:colors")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 2, 1 ),
+"update": 0,
+"values": [ PoolColorArray( 0, 0, 0, 0.639216, 0, 0, 0, 0 ), PoolColorArray( 0, 0, 0, 0, 0, 0, 0, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Control/VBoxContainer/OptionsButton:rect_position")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.1, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 236, 30 ), Vector2( 256, 30 ), Vector2( 0, 30 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Control/VBoxContainer/CassettesButton:rect_position")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0.1, 0.2, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 236, 80 ), Vector2( 256, 80 ), Vector2( 0, 80 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Control/VBoxContainer/NavigationButton:rect_position")
+tracks/4/interp = 2
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0.2, 0.3, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 236, 130 ), Vector2( 256, 130 ), Vector2( 0, 130 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Control/VBoxContainer/ExitButton:rect_position")
+tracks/5/interp = 2
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 236, 180 ), Vector2( 256, 180 ), Vector2( 0, 180 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Control/Node2D:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/7/type = "method"
+tracks/7/path = NodePath("..")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0.1 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "menu_close"
+} ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Control/Panel/Light2D:scale")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 0.5, 1 ),
+"update": 0,
+"values": [ Vector2( 0.15625, 3.28125 ), Vector2( 0.156, 5.25 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Control/Panel/Icon:modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( -2, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0.431373 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Control/Panel/Light2D:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0, 0.3, 0.5 ),
+"transitions": PoolRealArray( 0.5, 0.5, 1 ),
+"update": 0,
+"values": [ Vector2( -50, 100 ), Vector2( -50, 37 ), Vector2( -312, 37 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("Control/Panel/Polygon2D:scale")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 0.5, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1, 1.59864 ) ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("Control/Panel/Polygon2D:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0, 0.3, 0.5 ),
+"transitions": PoolRealArray( 0.5, 0.5, 1 ),
+"update": 0,
+"values": [ Vector2( -50, 0 ), Vector2( -50, -123 ), Vector2( -312, -123 ) ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("Control/Panel:self_modulate")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("Control/Panel/TextureRect3:modulate")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0, 0.5, 0.8 ),
+"transitions": PoolRealArray( 1, 0.5, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("Control/Panel:rect_position")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 555, 24 ) ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("TextureRect2:modulate")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("Control/Panel/TextureRect3/Navigation/Panel/Label/Polygon2D/Light2D:self_modulate")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray(  ),
+"transitions": PoolRealArray(  ),
+"update": 0,
+"values": [  ]
+}
+tracks/18/type = "value"
+tracks/18/path = NodePath("Control/Panel/TextureRect3/Navigation/Panel/Label/Polygon2D/Light2D:color")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"times": PoolRealArray( 0, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/19/type = "value"
+tracks/19/path = NodePath("Control/Panel/TextureRect3/Options/Panel/Label/Polygon2D/Light2D:energy")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/keys = {
+"times": PoolRealArray( 0, 0.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+tracks/20/type = "value"
+tracks/20/path = NodePath("Control/Node2D:visible")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/21/type = "value"
+tracks/21/path = NodePath("Control/Panel/TextureRect3/Options/Panel/Label/Polygon2D:visible")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/22/type = "value"
+tracks/22/path = NodePath("Control/Panel/TextureRect3/CassetteTapes/Panel/Label/Polygon2D/Light2D:energy")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/keys = {
+"times": PoolRealArray( 0, 0.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+tracks/23/type = "value"
+tracks/23/path = NodePath("Control/Panel/TextureRect3/CassetteTapes/Panel/Polygon2D/Light2D:energy")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/keys = {
+"times": PoolRealArray( 0, 0.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[sub_resource type="Animation" id=164]
+resource_name = "MenuChangeBackwards"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/path = NodePath("TextureRect:rect_position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 2, 1 ),
+"update": 0,
+"values": [ Vector2( 87, 0 ), Vector2( 87, -150 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("ColorRect:texture:gradient:colors")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 2, 1 ),
+"update": 0,
+"values": [ PoolColorArray( 0, 0, 0, 0.639216, 0, 0, 0, 0 ), PoolColorArray( 0, 0, 0, 0, 0, 0, 0, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Control/VBoxContainer/OptionsButton:rect_position")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.1, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 236, 30 ), Vector2( 256, 30 ), Vector2( 0, 30 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Control/VBoxContainer/CassettesButton:rect_position")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0.1, 0.2, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 236, 80 ), Vector2( 256, 80 ), Vector2( 0, 80 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Control/VBoxContainer/NavigationButton:rect_position")
+tracks/4/interp = 2
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0.2, 0.3, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 236, 130 ), Vector2( 256, 130 ), Vector2( 0, 130 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Control/VBoxContainer/ExitButton:rect_position")
+tracks/5/interp = 2
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 236, 180 ), Vector2( 256, 180 ), Vector2( 0, 180 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Control/Node2D:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/7/type = "method"
+tracks/7/path = NodePath("..")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "on_menu_animation_finished"
+} ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Control/Panel/Light2D:scale")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 0.5, 1 ),
+"update": 0,
+"values": [ Vector2( 0.15625, 3.28125 ), Vector2( 0.156, 5.25 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Control/Panel/Icon:modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( -2, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0.431373 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Control/Panel/Light2D:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0, 0.3, 0.5 ),
+"transitions": PoolRealArray( 0.5, 0.5, 1 ),
+"update": 0,
+"values": [ Vector2( -50, 100 ), Vector2( -50, 37 ), Vector2( -312, 37 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("Control/Panel/Polygon2D:scale")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 0.5, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1, 1.59864 ) ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("Control/Panel/Polygon2D:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0, 0.3, 0.5 ),
+"transitions": PoolRealArray( 0.5, 0.5, 1 ),
+"update": 0,
+"values": [ Vector2( -50, 0 ), Vector2( -50, -123 ), Vector2( -312, -123 ) ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("Control/Panel:self_modulate")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("Control/Panel/TextureRect3:modulate")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0, 0.5, 0.8 ),
+"transitions": PoolRealArray( 1, 0.5, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("Control/Panel:rect_position")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 555, 24 ) ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("TextureRect2:modulate")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("Control/Panel/TextureRect3/Navigation/Panel/Label/Polygon2D/Light2D:self_modulate")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray(  ),
+"transitions": PoolRealArray(  ),
+"update": 0,
+"values": [  ]
+}
+tracks/18/type = "value"
+tracks/18/path = NodePath("Control/Panel/TextureRect3/Navigation/Panel/Label/Polygon2D/Light2D:color")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"times": PoolRealArray( 0, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/19/type = "value"
+tracks/19/path = NodePath("Control/Panel/TextureRect3/Options/Panel/Label/Polygon2D/Light2D:energy")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/keys = {
+"times": PoolRealArray( 0, 0.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+tracks/20/type = "value"
+tracks/20/path = NodePath("Control/Node2D:visible")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/21/type = "value"
+tracks/21/path = NodePath("Control/Panel/TextureRect3/Options/Panel/Label/Polygon2D:visible")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/22/type = "value"
+tracks/22/path = NodePath("Control/Panel/TextureRect3/CassetteTapes/Panel/Label/Polygon2D/Light2D:energy")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/keys = {
+"times": PoolRealArray( 0, 0.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+tracks/23/type = "value"
+tracks/23/path = NodePath("Control/Panel/TextureRect3/CassetteTapes/Panel/Polygon2D/Light2D:energy")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/keys = {
+"times": PoolRealArray( 0, 0.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[sub_resource type="Animation" id=53]
+resource_name = "MenuClose"
+length = 0.7
+tracks/0/type = "value"
+tracks/0/path = NodePath("TextureRect:rect_position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 2, 1 ),
+"update": 0,
+"values": [ Vector2( 87, 0 ), Vector2( 87, -150 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("ColorRect:texture:gradient:colors")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 2, 1 ),
+"update": 0,
+"values": [ PoolColorArray( 0, 0, 0, 0.639216, 0, 0, 0, 0 ), PoolColorArray( 0, 0, 0, 0, 0, 0, 0, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("TextureRect2:modulate")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 2, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Control/VBoxContainer/OptionsButton:rect_position")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.1, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 236, 30 ), Vector2( 256, 30 ), Vector2( -700, 30 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Control/VBoxContainer/CassettesButton:rect_position")
+tracks/4/interp = 2
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0.1, 0.2, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 236, 80 ), Vector2( 256, 80 ), Vector2( -700, 80 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Control/VBoxContainer/NavigationButton:rect_position")
+tracks/5/interp = 2
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0.2, 0.3, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 236, 130 ), Vector2( 256, 130 ), Vector2( -700, 130 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Control/VBoxContainer/ExitButton:rect_position")
+tracks/6/interp = 2
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 236, 180 ), Vector2( 256, 180 ), Vector2( -700, 180 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Control/Node2D:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/8/type = "method"
+tracks/8/path = NodePath("..")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0.1 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "menu_close"
+} ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Control/Panel:rect_position")
+tracks/9/interp = 2
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0, 0.2, 0.5 ),
+"transitions": PoolRealArray( 0, 2, 1 ),
+"update": 0,
+"values": [ Vector2( 555, 24 ), Vector2( 555, 24 ), Vector2( 1579, 24 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Control/Panel/Light2D:scale")
+tracks/10/interp = 2
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0, 0.2, 0.7 ),
+"transitions": PoolRealArray( -2, 0, 1 ),
+"update": 0,
+"values": [ Vector2( 0.15625, 3.28125 ), Vector2( 0.156, 0 ), Vector2( 0.156, 0 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("Control/Panel/Icon:modulate")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( -2, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0.431373 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("Control/Panel/TextureRect3:modulate")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("Control/Panel:self_modulate")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("Control/Panel/Polygon2D:position")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -50, 0 ) ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("Control/Panel/Polygon2D:scale")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ) ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("Control/Panel/Light2D:position")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -50, 99 ) ]
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("Control/Panel/TextureRect3/Navigation/Panel/Label/Polygon2D/Light2D:self_modulate")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/18/type = "value"
+tracks/18/path = NodePath("Control/Panel/TextureRect3/Navigation/Panel/Label/Polygon2D/Light2D:color")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/19/type = "value"
+tracks/19/path = NodePath("Control/Node2D:visible")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[sub_resource type="Gradient" id=66]
+interpolation_mode = 2
+offsets = PoolRealArray( 0.157895, 0.507177, 0.899522 )
+colors = PoolColorArray( 1, 1, 1, 0.431373, 1, 1, 1, 1, 1, 1, 1, 0.392157 )
+
+[sub_resource type="GradientTexture" id=90]
+gradient = SubResource( 66 )
+width = 250
+
+[sub_resource type="DynamicFont" id=165]
+size = 20
+font_data = ExtResource( 43 )
+
+[sub_resource type="Gradient" id=82]
+interpolation_mode = 2
+offsets = PoolRealArray( 0, 0.517073, 1 )
+colors = PoolColorArray( 1, 1, 1, 0.501961, 0, 0, 0, 0.623529, 1, 1, 1, 0.494118 )
+
+[sub_resource type="GradientTexture" id=83]
+gradient = SubResource( 82 )
+
+[sub_resource type="StyleBoxTexture" id=84]
+texture = SubResource( 83 )
+region_rect = Rect2( 0, 0, 2048, 1 )
+
+[sub_resource type="StyleBoxEmpty" id=81]
+
+[sub_resource type="Gradient" id=54]
+offsets = PoolRealArray( 0, 0.441341, 0.832402, 1 )
+colors = PoolColorArray( 0, 0, 0, 0.623529, 0.0948505, 0.0948505, 0.0948505, 0.88462, 0.212465, 0.212465, 0.212465, 0.741549, 0.359375, 0.359375, 0.359375, 0.0156863 )
+
+[sub_resource type="GradientTexture" id=123]
+gradient = SubResource( 54 )
+
+[sub_resource type="StyleBoxTexture" id=85]
+texture = SubResource( 123 )
+region_rect = Rect2( 0, 0, 2048, 1 )
+
+[sub_resource type="StyleBoxTexture" id=124]
+texture = SubResource( 83 )
+region_rect = Rect2( 0, 0, 2048, 1 )
+
+[sub_resource type="CanvasItemMaterial" id=57]
+
+[sub_resource type="Gradient" id=107]
+interpolation_mode = 2
+offsets = PoolRealArray( 0, 0.547486, 1 )
+colors = PoolColorArray( 0.34375, 0.34375, 0.34375, 1, 0.132813, 0.132813, 0.132813, 1, 0.671875, 0.671875, 0.671875, 1 )
+
+[sub_resource type="GradientTexture" id=108]
+gradient = SubResource( 107 )
+width = 298
+
+[sub_resource type="CanvasItemMaterial" id=60]
+light_mode = 2
+
+[sub_resource type="StyleBoxEmpty" id=160]
+
+[sub_resource type="CanvasItemMaterial" id=70]
+
+[sub_resource type="Gradient" id=75]
+interpolation_mode = 2
+offsets = PoolRealArray( 0, 0.541463, 1 )
+colors = PoolColorArray( 0.345098, 0.345098, 0.345098, 0.764706, 1, 1, 1, 0.741176, 0.133333, 0.133333, 0.133333, 0.945098 )
+
+[sub_resource type="GradientTexture2D" id=76]
+gradient = SubResource( 75 )
+fill_from = Vector2( 0.483333, 0 )
+fill_to = Vector2( 0.566667, 1 )
+
+[sub_resource type="Gradient" id=79]
+offsets = PoolRealArray( 0.00487805, 0.634146, 1 )
+colors = PoolColorArray( 0, 0, 0, 0.890196, 0, 0, 0, 0.470588, 0, 0, 0, 0 )
+
+[sub_resource type="GradientTexture2D" id=80]
+gradient = SubResource( 79 )
+width = 660
+height = 380
+fill = 1
+fill_from = Vector2( 0.475, 0.504167 )
+fill_to = Vector2( 1, 1 )
+
+[sub_resource type="StyleBoxEmpty" id=86]
+
+[sub_resource type="DynamicFont" id=99]
+size = 36
+font_data = ExtResource( 43 )
+
+[sub_resource type="CanvasItemMaterial" id=88]
+light_mode = 2
+
+[sub_resource type="Gradient" id=89]
+interpolation_mode = 2
+offsets = PoolRealArray( 0, 0.82439, 1 )
+colors = PoolColorArray( 1, 1, 1, 0.921569, 0.0487805, 0.0487805, 0.0487805, 0.0449546, 0, 0, 0, 0 )
+
+[sub_resource type="GradientTexture2D" id=91]
+gradient = SubResource( 89 )
+fill = 1
+fill_from = Vector2( 0.5, 0.529167 )
+
+[sub_resource type="CanvasItemMaterial" id=92]
+blend_mode = 1
+
+[sub_resource type="Gradient" id=94]
+interpolation_mode = 2
+colors = PoolColorArray( 1, 1, 1, 0.780392, 0, 0, 0, 0.843137 )
+
+[sub_resource type="Gradient" id=95]
+interpolation_mode = 2
+colors = PoolColorArray( 1, 1, 1, 0.780392, 0, 0, 0, 0.843137 )
+
+[sub_resource type="Gradient" id=96]
+interpolation_mode = 2
+colors = PoolColorArray( 0.106061, 0.106061, 0.106061, 0.836482, 1, 1, 1, 0.780392 )
+
+[sub_resource type="Gradient" id=97]
+interpolation_mode = 2
+colors = PoolColorArray( 0, 0, 0, 0.843137, 1, 1, 1, 0.780392 )
+
+[sub_resource type="Gradient" id=98]
+interpolation_mode = 2
+colors = PoolColorArray( 0.0648148, 0.0648148, 0.0648148, 0.83907, 1, 1, 1, 0.780392 )
+
+[sub_resource type="DynamicFont" id=93]
+font_data = ExtResource( 43 )
+
+[sub_resource type="StyleBoxEmpty" id=100]
+
+[sub_resource type="DynamicFont" id=101]
+size = 36
+font_data = ExtResource( 43 )
+
+[sub_resource type="DynamicFont" id=102]
+size = 26
+font_data = ExtResource( 43 )
+
+[sub_resource type="Gradient" id=103]
+offsets = PoolRealArray( 0, 0.507317, 1 )
+colors = PoolColorArray( 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0 )
+
+[sub_resource type="GradientTexture2D" id=104]
+gradient = SubResource( 103 )
+
+[sub_resource type="GradientTexture" id=109]
+gradient = SubResource( 54 )
+
+[sub_resource type="StyleBoxTexture" id=110]
+texture = SubResource( 109 )
+region_rect = Rect2( 0, 0, 2048, 1 )
+
+[sub_resource type="DynamicFont" id=111]
+font_data = ExtResource( 43 )
+
+[sub_resource type="Gradient" id=134]
+interpolation_mode = 1
+colors = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 0 )
+
+[sub_resource type="GradientTexture2D" id=135]
+flags = 2
+gradient = SubResource( 134 )
+width = 10
+height = 11
+fill_from = Vector2( 1, 0 )
+
+[sub_resource type="Gradient" id=139]
+interpolation_mode = 2
+colors = PoolColorArray( 0, 0, 0, 1, 0.172852, 0.172852, 0.172852, 1 )
+
+[sub_resource type="GradientTexture2D" id=140]
+gradient = SubResource( 139 )
+height = 7
+
+[sub_resource type="StyleBoxTexture" id=141]
+texture = SubResource( 140 )
+region_rect = Rect2( 0, 0, 0, 7 )
+
+[sub_resource type="Gradient" id=136]
+colors = PoolColorArray( 0.375, 0.375, 0.375, 1, 1, 1, 1, 1 )
+
+[sub_resource type="GradientTexture2D" id=137]
+gradient = SubResource( 136 )
+
+[sub_resource type="StyleBoxTexture" id=138]
+texture = SubResource( 137 )
+region_rect = Rect2( 0, 0, 64, 64 )
+
+[sub_resource type="StyleBoxEmpty" id=157]
+
+[sub_resource type="StyleBoxEmpty" id=151]
+
+[sub_resource type="StyleBoxEmpty" id=152]
+
+[sub_resource type="StyleBoxEmpty" id=153]
+
+[sub_resource type="StyleBoxEmpty" id=154]
+
+[sub_resource type="StyleBoxEmpty" id=155]
+
+[sub_resource type="Theme" id=156]
+VScrollBar/icons/decrement = null
+VScrollBar/icons/decrement_highlight = null
+VScrollBar/icons/decrement_pressed = null
+VScrollBar/icons/increment = null
+VScrollBar/icons/increment_highlight = null
+VScrollBar/icons/increment_pressed = null
+VScrollBar/styles/grabber = SubResource( 151 )
+VScrollBar/styles/grabber_highlight = SubResource( 152 )
+VScrollBar/styles/grabber_pressed = SubResource( 153 )
+VScrollBar/styles/scroll = SubResource( 154 )
+VScrollBar/styles/scroll_focus = SubResource( 155 )
+
+[sub_resource type="StyleBoxEmpty" id=144]
+
+[sub_resource type="GradientTexture" id=145]
+gradient = SubResource( 82 )
+
+[sub_resource type="StyleBoxTexture" id=146]
+texture = SubResource( 145 )
+region_rect = Rect2( 0, 0, 2048, 1 )
+
+[sub_resource type="StyleBoxEmpty" id=147]
+
+[sub_resource type="StyleBoxEmpty" id=148]
+
+[sub_resource type="GradientTexture" id=149]
+gradient = SubResource( 54 )
+
+[sub_resource type="StyleBoxTexture" id=150]
+texture = SubResource( 149 )
+region_rect = Rect2( 0, 0, 2048, 1 )
+
+[sub_resource type="CanvasItemMaterial" id=161]
+
+[sub_resource type="StyleBoxEmpty" id=158]
+
+[sub_resource type="StyleBoxEmpty" id=159]
+
+[sub_resource type="CanvasItemMaterial" id=77]
+light_mode = 2
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+TracksGroup = ExtResource( 69 )
+GamesGroup = ExtResource( 6 )
+
+[node name="CameraAnchorPoint1" type="Position2D" parent="."]
+position = Vector2( 320, 180 )
+
+[node name="MGS3" type="Polygon2D" parent="."]
+texture = ExtResource( 26 )
+texture_offset = Vector2( 30, -130 )
+texture_scale = Vector2( 3, 3 )
+polygon = PoolVector2Array( 0, 360, 151, 360, 212, 360, 303, 163, 0, 163 )
+uv = PoolVector2Array( 0, 360, 151, 361, 212, 360, 303, 163, 0, 163 )
+
+[node name="Button" type="Button" parent="MGS3"]
+margin_left = -1.0
+margin_top = 163.0
+margin_right = 303.0
+margin_bottom = 361.0
+focus_neighbour_left = NodePath("../../MGSV/Button")
+focus_neighbour_top = NodePath("../../MGSPW/Button")
+focus_neighbour_right = NodePath("../../MGSV/Button")
+focus_neighbour_bottom = NodePath("../../MGSPW/Button")
+focus_next = NodePath("../../MGS1/Button")
+mouse_filter = 2
+custom_styles/hover = SubResource( 20 )
+custom_styles/pressed = SubResource( 21 )
+custom_styles/focus = SubResource( 26 )
+custom_styles/disabled = SubResource( 23 )
+custom_styles/normal = SubResource( 24 )
+group = ExtResource( 6 )
+script = ExtResource( 112 )
+path = "res://Games/Mgs3Game.tscn"
+
+[node name="Title" parent="MGS3" instance=ExtResource( 8 )]
+margin_left = -237.0
+margin_top = 165.0
+margin_right = 20.0
+margin_bottom = 217.0
+
+[node name="AnimationPlayer" parent="MGS3/Title" index="0"]
+anims/RESET = SubResource( 36 )
+anims/SLIDE = SubResource( 37 )
+
+[node name="Polygon" type="Polygon2D" parent="MGS3"]
+z_index = 3
+z_as_relative = false
+color = Color( 0.317647, 0.403922, 0.223529, 1 )
+polygon = PoolVector2Array( 211, 360, 224, 360, 318, 154, 0, 154, 0, 164, 302, 164 )
+
+[node name="Position2D" type="Position2D" parent="MGS3"]
+position = Vector2( 262, 224 )
+
+[node name="MGSPW" type="Polygon2D" parent="."]
+self_modulate = Color( 0.501961, 0.501961, 0.501961, 1 )
+texture = ExtResource( 5 )
+texture_offset = Vector2( 0, 20 )
+texture_scale = Vector2( 5, 5 )
+polygon = PoolVector2Array( 0, 0, 379, 0, 307, 156, 0, 156 )
+
+[node name="Button" type="Button" parent="MGSPW"]
+margin_right = 380.0
+margin_bottom = 159.0
+focus_neighbour_left = NodePath("../../MGSGZ/Button")
+focus_neighbour_top = NodePath("../../MGS3/Button")
+focus_neighbour_right = NodePath("../../MGSGZ/Button")
+focus_neighbour_bottom = NodePath("../../MGS3/Button")
+focus_next = NodePath("../../MGS1/Button")
+mouse_filter = 2
+custom_styles/hover = SubResource( 10 )
+custom_styles/pressed = SubResource( 11 )
+custom_styles/focus = SubResource( 12 )
+custom_styles/disabled = SubResource( 13 )
+custom_styles/normal = SubResource( 14 )
+group = ExtResource( 6 )
+script = ExtResource( 112 )
+path = "res://Games/MgspwGame.tscn"
+
+[node name="Polygon" type="Polygon2D" parent="MGSPW"]
+modulate = Color( 0, 0, 0, 1 )
+z_index = 3
+z_as_relative = false
+color = Color( 0.77, 0.510125, 0.1463, 1 )
+polygon = PoolVector2Array( -1, 164, 313, 164, 388, 0, 378, 0, 307, 154, -1, 154 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Title" parent="MGSPW" instance=ExtResource( 11 )]
+margin_left = -277.0
+margin_top = 80.0
+margin_right = -10.0
+margin_bottom = 147.0
+
+[node name="AnimationPlayer" parent="MGSPW/Title" index="0"]
+anims/RESET = SubResource( 32 )
+anims/SLIDE = SubResource( 33 )
+
+[node name="Position2D" type="Position2D" parent="MGSPW"]
+position = Vector2( 259, 146 )
+
+[node name="MGSGZ" type="Polygon2D" parent="."]
+self_modulate = Color( 0.501961, 0.501961, 0.501961, 1 )
+texture = ExtResource( 29 )
+texture_offset = Vector2( -350, 90 )
+texture_scale = Vector2( 4, 4 )
+polygon = PoolVector2Array( 640, 0, 387, 0, 297, 197, 640, 197 )
+
+[node name="Button" type="Button" parent="MGSGZ"]
+margin_left = 297.0
+margin_top = -1.0
+margin_right = 640.0
+margin_bottom = 197.0
+focus_neighbour_left = NodePath("../../MGSPW/Button")
+focus_neighbour_top = NodePath("../../MGSV/Button")
+focus_neighbour_right = NodePath("../../MGSPW/Button")
+focus_neighbour_bottom = NodePath("../../MGSV/Button")
+focus_next = NodePath("../../MGS1/Button")
+mouse_filter = 2
+custom_styles/hover = SubResource( 15 )
+custom_styles/pressed = SubResource( 16 )
+custom_styles/focus = SubResource( 25 )
+custom_styles/disabled = SubResource( 18 )
+custom_styles/normal = SubResource( 19 )
+group = ExtResource( 6 )
+script = ExtResource( 112 )
+path = "res://Games/MgsgzGame.tscn"
+
+[node name="Polygon" type="Polygon2D" parent="MGSGZ"]
+modulate = Color( 0, 0, 0, 1 )
+z_index = 3
+z_as_relative = false
+color = Color( 0.0598, 0.233307, 0.26, 1 )
+polygon = PoolVector2Array( 640, 207, 640, 196, 298, 196, 388, 0, 378, 0, 282, 207 )
+
+[node name="Title" parent="MGSGZ" instance=ExtResource( 12 )]
+margin_left = 320.0
+margin_top = -95.0
+margin_right = 647.0
+margin_bottom = 4.99997
+
+[node name="AnimationPlayer" parent="MGSGZ/Title" index="0"]
+anims/RESET = SubResource( 34 )
+anims/SLIDE = SubResource( 35 )
+
+[node name="Position2D" type="Position2D" parent="MGSGZ"]
+position = Vector2( 380, 150 )
+
+[node name="MGSV" type="Polygon2D" parent="."]
+self_modulate = Color( 0.501961, 0.501961, 0.501961, 1 )
+texture = ExtResource( 28 )
+texture_offset = Vector2( -270, -120 )
+texture_scale = Vector2( 3.4, 4 )
+polygon = PoolVector2Array( 640, 360, 220, 361, 292, 205, 640, 205 )
+
+[node name="Button" type="Button" parent="MGSV"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 221.0
+margin_top = 205.0
+margin_right = 641.0
+margin_bottom = 361.0
+focus_neighbour_left = NodePath("../../MGS3/Button")
+focus_neighbour_top = NodePath("../../MGSGZ/Button")
+focus_neighbour_right = NodePath("../../MGS3/Button")
+focus_neighbour_bottom = NodePath("../../MGSGZ/Button")
+focus_next = NodePath("../../MGS1/Button")
+mouse_filter = 2
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/focus = SubResource( 7 )
+custom_styles/disabled = SubResource( 8 )
+custom_styles/normal = SubResource( 9 )
+group = ExtResource( 6 )
+script = ExtResource( 112 )
+path = "res://Games/MgsvGame.tscn"
+
+[node name="Polygon" type="Polygon2D" parent="MGSV"]
+modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 0, 1 )
+z_index = 3
+z_as_relative = false
+color = Color( 0.58, 0.145, 0.15225, 1 )
+polygon = PoolVector2Array( 211, 359, 224, 359, 293, 206, 640, 206, 640, 194.745, 287, 194.745 )
+
+[node name="Title" parent="MGSV" instance=ExtResource( 7 )]
+margin_left = 264.0
+margin_top = 271.573
+margin_right = 625.0
+margin_bottom = 477.573
+texture = ExtResource( 16 )
+
+[node name="AnimationPlayer" parent="MGSV/Title" index="0"]
+anims/RESET = SubResource( 30 )
+anims/SLIDE = SubResource( 31 )
+
+[node name="Position2D" type="Position2D" parent="MGSV"]
+position = Vector2( 379, 253.376 )
+
+[node name="CameraAnchorPoint2" type="Position2D" parent="."]
+position = Vector2( 970, 180 )
+
+[node name="MG" type="Polygon2D" parent="."]
+self_modulate = Color( 0.5, 0.5, 0.5, 1 )
+position = Vector2( 650, 0 )
+texture = ExtResource( 27 )
+texture_offset = Vector2( 50, 250 )
+texture_scale = Vector2( 2.5, 2.5 )
+polygon = PoolVector2Array( 0, 0, 379, 0, 307, 156, 0, 156 )
+
+[node name="Button" type="Button" parent="MG"]
+margin_right = 380.0
+margin_bottom = 159.0
+focus_neighbour_left = NodePath("../../MGS4/Button")
+focus_neighbour_top = NodePath("../../MGS1/Button")
+focus_neighbour_right = NodePath("../../MGS4/Button")
+focus_neighbour_bottom = NodePath("../../MGS1/Button")
+focus_previous = NodePath("../../MGS3/Button")
+mouse_filter = 2
+custom_styles/hover = SubResource( 10 )
+custom_styles/pressed = SubResource( 11 )
+custom_styles/focus = SubResource( 12 )
+custom_styles/disabled = SubResource( 13 )
+custom_styles/normal = SubResource( 14 )
+group = ExtResource( 6 )
+script = ExtResource( 112 )
+path = "res://Games/MgGame.tscn"
+
+[node name="Polygon" type="Polygon2D" parent="MG"]
+modulate = Color( 0, 0, 0, 1 )
+z_index = 3
+z_as_relative = false
+color = Color( 0.996078, 0.552941, 0.309804, 1 )
+polygon = PoolVector2Array( -1, 164, 313, 164, 388, 0, 378, 0, 307, 154, -1, 154 )
+
+[node name="Title" parent="MG" instance=ExtResource( 13 )]
+margin_left = -32.0
+margin_top = -62.0
+margin_right = 372.0
+margin_bottom = -1.0
+
+[node name="AnimationPlayer" parent="MG/Title" index="0"]
+anims/RESET = SubResource( 40 )
+anims/SLIDE = SubResource( 41 )
+
+[node name="Position2D" type="Position2D" parent="MG"]
+position = Vector2( 259, 147 )
+
+[node name="MGS1" type="Polygon2D" parent="."]
+self_modulate = Color( 0.5, 0.5, 0.5, 1 )
+position = Vector2( 650, 0 )
+texture = ExtResource( 4 )
+texture_offset = Vector2( 0, -160 )
+texture_scale = Vector2( 4, 4 )
+polygon = PoolVector2Array( 0, 360, 151, 360, 212, 360, 303, 163, 0, 163 )
+
+[node name="Button" type="Button" parent="MGS1"]
+margin_top = 163.0
+margin_right = 304.0
+margin_bottom = 361.0
+focus_neighbour_left = NodePath("../../MGS2/Button")
+focus_neighbour_top = NodePath("../../MG/Button")
+focus_neighbour_right = NodePath("../../MGS2/Button")
+focus_neighbour_bottom = NodePath("../../MG/Button")
+focus_previous = NodePath("../../MGS3/Button")
+mouse_filter = 2
+custom_styles/hover = SubResource( 20 )
+custom_styles/pressed = SubResource( 21 )
+custom_styles/focus = SubResource( 26 )
+custom_styles/disabled = SubResource( 23 )
+custom_styles/normal = SubResource( 24 )
+group = ExtResource( 6 )
+script = ExtResource( 112 )
+path = "res://Games/Mgs1Game.tscn"
+
+[node name="Polygon" type="Polygon2D" parent="MGS1"]
+modulate = Color( 0, 0, 0, 1 )
+z_index = 3
+z_as_relative = false
+color = Color( 0.768627, 0.27451, 0.235294, 1 )
+polygon = PoolVector2Array( 211, 360, 224, 360, 318, 154, 0, 154, 0, 164, 302, 164 )
+
+[node name="Title" parent="MGS1" instance=ExtResource( 15 )]
+margin_top = 350.0
+margin_right = 282.0
+margin_bottom = 438.0
+
+[node name="AnimationPlayer" parent="MGS1/Title" index="0"]
+anims/RESET = SubResource( 44 )
+anims/SLIDE = SubResource( 45 )
+
+[node name="Position2D" type="Position2D" parent="MGS1"]
+position = Vector2( 259, 213 )
+
+[node name="MGS2" type="Polygon2D" parent="."]
+self_modulate = Color( 0.5, 0.5, 0.5, 1 )
+position = Vector2( 650, 0 )
+texture = ExtResource( 3 )
+texture_offset = Vector2( -40, -140 )
+texture_scale = Vector2( 4, 4 )
+polygon = PoolVector2Array( 640, 360, 220, 361, 292, 205, 640, 205 )
+
+[node name="Button" type="Button" parent="MGS2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 221.0
+margin_top = 205.0
+margin_right = 641.0
+margin_bottom = 361.0
+focus_neighbour_left = NodePath("../../MGS1/Button")
+focus_neighbour_top = NodePath("../../MGS4/Button")
+focus_neighbour_right = NodePath("../../MGS1/Button")
+focus_neighbour_bottom = NodePath("../../MGS4/Button")
+focus_previous = NodePath("../../MGS3/Button")
+mouse_filter = 2
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/focus = SubResource( 7 )
+custom_styles/disabled = SubResource( 8 )
+custom_styles/normal = SubResource( 9 )
+group = ExtResource( 6 )
+script = ExtResource( 112 )
+path = "res://Games/Mgs2Game.tscn"
+
+[node name="Polygon" type="Polygon2D" parent="MGS2"]
+modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 0, 1 )
+z_index = 3
+z_as_relative = false
+color = Color( 0.1242, 0.4707, 0.54, 1 )
+polygon = PoolVector2Array( 211, 359, 224, 359, 293, 206, 640, 206, 640, 194.745, 287, 194.745 )
+
+[node name="Title" parent="MGS2" instance=ExtResource( 10 )]
+margin_left = 288.0
+margin_top = 361.994
+margin_right = 613.0
+margin_bottom = 433.994
+
+[node name="AnimationPlayer" parent="MGS2/Title" index="0"]
+anims/RESET = SubResource( 38 )
+anims/SLIDE = SubResource( 39 )
+
+[node name="Position2D" type="Position2D" parent="MGS2"]
+position = Vector2( 449, 280.516 )
+
+[node name="MGS4" type="Polygon2D" parent="."]
+self_modulate = Color( 0.5, 0.5, 0.5, 1 )
+position = Vector2( 650, 0 )
+texture = ExtResource( 2 )
+texture_offset = Vector2( -170, 80 )
+texture_scale = Vector2( 2.5, 2.5 )
+polygon = PoolVector2Array( 640, 0, 387, 0, 297, 197, 640, 197 )
+
+[node name="Button" type="Button" parent="MGS4"]
+margin_left = 297.0
+margin_top = -1.0
+margin_right = 640.0
+margin_bottom = 197.0
+focus_neighbour_left = NodePath("../../MG/Button")
+focus_neighbour_top = NodePath("../../MGS2/Button")
+focus_neighbour_right = NodePath("../../MG/Button")
+focus_neighbour_bottom = NodePath("../../MGS2/Button")
+focus_previous = NodePath("../../MGS3/Button")
+mouse_filter = 2
+custom_styles/hover = SubResource( 15 )
+custom_styles/pressed = SubResource( 16 )
+custom_styles/focus = SubResource( 25 )
+custom_styles/disabled = SubResource( 18 )
+custom_styles/normal = SubResource( 19 )
+group = ExtResource( 6 )
+script = ExtResource( 112 )
+path = "res://Games/Mgs4Game.tscn"
+
+[node name="Polygon" type="Polygon2D" parent="MGS4"]
+modulate = Color( 0, 0, 0, 1 )
+z_index = 3
+z_as_relative = false
+color = Color( 0.77, 0.643463, 0.3234, 1 )
+polygon = PoolVector2Array( 640, 207, 640, 196, 298, 196, 388, 0, 378, 0, 282, 207 )
+
+[node name="Title" parent="MGS4" instance=ExtResource( 14 )]
+margin_left = 635.0
+margin_top = 88.0
+margin_right = 940.0
+margin_bottom = 235.0
+
+[node name="AnimationPlayer" parent="MGS4/Title" index="0"]
+anims/RESET = SubResource( 42 )
+anims/SLIDE = SubResource( 43 )
+
+[node name="Position2D" type="Position2D" parent="MGS4"]
+position = Vector2( 506, 109 )
+
+[node name="FRAME" type="Polygon2D" parent="."]
+z_index = 2
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( 0, 156, 307, 156, 379, 0, 387, 0, 297, 197, 640, 197, 640, 0, 650, 0, 650, 197, 650, 204, 650, 360, 640, 360, 640, 205, 292, 204, 220, 360, 212, 360, 303, 163, 0, 163 )
+
+[node name="GameEffects" type="Tween" parent="."]
+
+[node name="Sway" parent="." instance=ExtResource( 17 )]
+NOISE_SWAY_SPEED = 0.2
+NOISE_SWAY_STRENGTH = 20.0
+
+[node name="OpeningCamera" parent="." instance=ExtResource( 32 )]
+z_index = 3
+current = true
+limit_smoothed = true
+
+[node name="Sprite" parent="OpeningCamera" index="0"]
+modulate = Color( 1, 1, 1, 1 )
+self_modulate = Color( 1, 1, 1, 1 )
+scale = Vector2( 0.333, 0.333 )
+
+[node name="ColorRect" parent="OpeningCamera/Sprite" index="0"]
+margin_left = -1031.0
+margin_top = -598.0
+margin_right = 3120.0
+margin_bottom = 601.0
+
+[node name="AnimationPlayer" parent="OpeningCamera" index="1"]
+anims/CLOSE = SubResource( 162 )
+anims/OPEN = SubResource( 163 )
+
+[node name="Vignette" type="Sprite" parent="."]
+modulate = Color( 0.317647, 0.403922, 0.223529, 1 )
+material = SubResource( 47 )
+position = Vector2( 320.75, 181.75 )
+scale = Vector2( 0.53875, 0.6075 )
+texture = ExtResource( 34 )
+
+[node name="Vignette" type="Sprite" parent="Vignette"]
+material = SubResource( 47 )
+position = Vector2( 1203.25, -1.23456 )
+texture = ExtResource( 34 )
+
+[node name="Blur" type="ColorRect" parent="."]
+material = SubResource( 49 )
+margin_left = -57.0
+margin_top = -110.0
+margin_right = 1402.0
+margin_bottom = 470.0
+
+[node name="MainCamera" type="Camera2D" parent="."]
+position = Vector2( 320, 180 )
+limit_left = 0
+limit_top = 0
+limit_right = 1290
+limit_bottom = 360
+limit_smoothed = true
+smoothing_enabled = true
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Menu" parent="." instance=ExtResource( 35 )]
+
+[node name="AnimationPlayer" parent="Menu" index="0"]
+autoplay = ""
+anims/Menu = ExtResource( 42 )
+anims/MenuChange = SubResource( 78 )
+anims/MenuChangeBackwards = SubResource( 164 )
+anims/MenuClose = SubResource( 53 )
+
+[node name="ColorRect" parent="Menu" index="1"]
+margin_left = -12.0
+margin_top = -13.0
+margin_right = 650.0
+margin_bottom = 375.0
+
+[node name="TextureRect" parent="Menu" index="2"]
+light_mask = 4
+
+[node name="Light2D" type="Light2D" parent="Menu/TextureRect" index="0"]
+position = Vector2( 231, 63 )
+scale = Vector2( 1.77075, 106 )
+texture = SubResource( 90 )
+range_item_cull_mask = 4
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="TextureRect2" type="TextureRect" parent="Menu"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = -27.0
+margin_top = -27.0
+margin_right = 674.0
+margin_bottom = 392.0
+texture = ExtResource( 34 )
+expand = true
+
+[node name="Control" type="Control" parent="Menu"]
+margin_left = -220.0
+margin_top = 119.0
+margin_right = 90.0
+margin_bottom = 339.0
+
+[node name="VBoxContainer" type="Control" parent="Menu/Control"]
+light_mask = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="OptionsButton" type="Button" parent="Menu/Control/VBoxContainer"]
+light_mask = 2
+margin_top = 30.0
+margin_right = 200.0
+margin_bottom = 70.0
+rect_min_size = Vector2( 200, 40 )
+focus_neighbour_top = NodePath("../ExitButton")
+focus_neighbour_bottom = NodePath("../CassettesButton")
+focus_next = NodePath(".")
+focus_previous = NodePath(".")
+mouse_filter = 2
+size_flags_horizontal = 2
+size_flags_vertical = 9
+custom_fonts/font = SubResource( 165 )
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 84 )
+custom_styles/focus = SubResource( 81 )
+custom_styles/disabled = SubResource( 8 )
+custom_styles/normal = SubResource( 85 )
+group = ExtResource( 36 )
+text = "OPTIONS"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="CassettesButton" type="Button" parent="Menu/Control/VBoxContainer"]
+light_mask = 2
+margin_top = 80.0
+margin_right = 200.0
+margin_bottom = 120.0
+rect_min_size = Vector2( 200, 40 )
+focus_neighbour_top = NodePath("../OptionsButton")
+focus_neighbour_bottom = NodePath("../NavigationButton")
+focus_next = NodePath(".")
+focus_previous = NodePath(".")
+mouse_filter = 2
+size_flags_horizontal = 2
+size_flags_vertical = 9
+custom_fonts/font = SubResource( 165 )
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 124 )
+custom_styles/focus = SubResource( 81 )
+custom_styles/disabled = SubResource( 8 )
+custom_styles/normal = SubResource( 85 )
+group = ExtResource( 36 )
+text = "WALKMAN"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="NavigationButton" type="Button" parent="Menu/Control/VBoxContainer"]
+light_mask = 2
+margin_top = 130.0
+margin_right = 200.002
+margin_bottom = 170.0
+rect_min_size = Vector2( 200, 40 )
+focus_neighbour_top = NodePath("../CassettesButton")
+focus_neighbour_bottom = NodePath("../ExitButton")
+focus_next = NodePath(".")
+focus_previous = NodePath(".")
+mouse_filter = 2
+size_flags_horizontal = 2
+size_flags_vertical = 9
+custom_fonts/font = SubResource( 165 )
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 84 )
+custom_styles/focus = SubResource( 81 )
+custom_styles/disabled = SubResource( 8 )
+custom_styles/normal = SubResource( 85 )
+group = ExtResource( 36 )
+text = "NAVIGATION"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="ExitButton" type="Button" parent="Menu/Control/VBoxContainer"]
+light_mask = 2
+margin_top = 180.0
+margin_right = 200.0
+margin_bottom = 220.0
+rect_min_size = Vector2( 200, 40 )
+focus_neighbour_top = NodePath("../NavigationButton")
+focus_neighbour_bottom = NodePath("../OptionsButton")
+focus_next = NodePath(".")
+focus_previous = NodePath(".")
+mouse_filter = 2
+size_flags_horizontal = 2
+size_flags_vertical = 9
+custom_fonts/font = SubResource( 165 )
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 84 )
+custom_styles/focus = SubResource( 81 )
+custom_styles/disabled = SubResource( 8 )
+custom_styles/normal = SubResource( 85 )
+group = ExtResource( 36 )
+text = "EXIT"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="ExitTimer" type="Timer" parent="Menu/Control/VBoxContainer/ExitButton"]
+wait_time = 0.3
+one_shot = true
+
+[node name="Node2D" type="Node2D" parent="Menu/Control"]
+material = SubResource( 57 )
+position = Vector2( -50, 30 )
+
+[node name="Light2D" type="Light2D" parent="Menu/Control/Node2D"]
+position = Vector2( 123.5, 20 )
+scale = Vector2( 1, 46 )
+texture = SubResource( 108 )
+range_item_cull_mask = 2
+
+[node name="Polygon2D" type="Polygon2D" parent="Menu/Control/Node2D"]
+light_mask = 2
+material = SubResource( 60 )
+position = Vector2( -10, -299 )
+polygon = PoolVector2Array( 11, 342, 7, 342, 7, 296, 11, 296 )
+
+[node name="Polygon2D3" type="Polygon2D" parent="Menu/Control/Node2D"]
+light_mask = 2
+material = SubResource( 60 )
+position = Vector2( 239, -299 )
+polygon = PoolVector2Array( 11, 342, 7, 342, 7, 296, 11, 296 )
+
+[node name="Polygon2D2" type="Polygon2D" parent="Menu/Control/Node2D"]
+light_mask = 2
+material = SubResource( 60 )
+position = Vector2( -10, -299 )
+polygon = PoolVector2Array( 11, 296, 256, 296, 256, 300, 11, 300 )
+
+[node name="Polygon2D4" type="Polygon2D" parent="Menu/Control/Node2D"]
+light_mask = 2
+material = SubResource( 60 )
+position = Vector2( -10, -257 )
+polygon = PoolVector2Array( 11, 296, 256, 296, 256, 300, 11, 300 )
+
+[node name="Panel" type="Panel" parent="Menu/Control"]
+margin_left = 1579.0
+margin_top = 24.0
+margin_right = 1879.0
+margin_bottom = 224.0
+custom_styles/panel = SubResource( 160 )
+
+[node name="Icon" type="TextureRect" parent="Menu/Control/Panel"]
+modulate = Color( 1, 1, 1, 0 )
+material = SubResource( 70 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 300.0
+margin_bottom = 200.0
+expand = true
+stretch_mode = 6
+
+[node name="Light2D" type="Light2D" parent="Menu/Control/Panel"]
+position = Vector2( -50, 100 )
+scale = Vector2( 0.156, 1e-05 )
+texture = SubResource( 76 )
+mode = 2
+range_item_cull_mask = 16
+shadow_item_cull_mask = 16
+
+[node name="TextureRect3" type="TextureRect" parent="Menu/Control/Panel"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -345.0
+margin_top = -153.0
+margin_right = 16.9998
+margin_bottom = 28.0
+texture = SubResource( 80 )
+expand = true
+stretch_mode = 7
+
+[node name="Navigation" type="Control" parent="Menu/Control/Panel/TextureRect3"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 50.0
+margin_top = 22.0
+margin_right = -23.9996
+margin_bottom = -23.0
+
+[node name="Panel" type="Panel" parent="Menu/Control/Panel/TextureRect3/Navigation"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 86 )
+
+[node name="Label" type="Label" parent="Menu/Control/Panel/TextureRect3/Navigation/Panel"]
+light_mask = 6
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -93.0
+margin_right = 93.0
+margin_bottom = 45.0
+custom_fonts/font = SubResource( 99 )
+text = "NAVIGATION"
+
+[node name="Polygon2D" type="Polygon2D" parent="Menu/Control/Panel/TextureRect3/Navigation/Panel/Label"]
+light_mask = 6
+material = SubResource( 88 )
+position = Vector2( -25.5, 40 )
+polygon = PoolVector2Array( 10, 0, 230, 0, 230, 5, 10, 5 )
+
+[node name="Light2D" type="Light2D" parent="Menu/Control/Panel/TextureRect3/Navigation/Panel/Label/Polygon2D"]
+self_modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 120.5, 2 )
+scale = Vector2( 3.45313, 0.546875 )
+texture = SubResource( 91 )
+color = Color( 1, 1, 1, 0 )
+range_item_cull_mask = 7
+
+[node name="Button" type="Button" parent="Menu/Control/Panel/TextureRect3/Navigation/Panel"]
+visible = false
+margin_right = 12.0
+margin_bottom = 20.0
+mouse_filter = 2
+disabled = true
+
+[node name="TextureRect" type="TextureRect" parent="Menu/Control/Panel/TextureRect3/Navigation/Panel"]
+material = SubResource( 92 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -196.0
+margin_top = -74.0
+margin_right = 196.0
+margin_bottom = 150.0
+texture = ExtResource( 44 )
+expand = true
+stretch_mode = 6
+
+[node name="Line2D" type="Line2D" parent="Menu/Control/Panel/TextureRect3/Navigation/Panel/TextureRect"]
+position = Vector2( -65, 38 )
+points = PoolVector2Array( 0, 0, 100, 0, 150, 20 )
+width = 4.0
+default_color = Color( 1, 1, 1, 1 )
+gradient = SubResource( 94 )
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="Line2D9" type="Line2D" parent="Menu/Control/Panel/TextureRect3/Navigation/Panel/TextureRect"]
+position = Vector2( 259, -5 )
+points = PoolVector2Array( 0, 0, 0, 28 )
+width = 4.0
+default_color = Color( 1, 1, 1, 1 )
+gradient = SubResource( 95 )
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="Line2D4" type="Line2D" parent="Menu/Control/Panel/TextureRect3/Navigation/Panel/TextureRect"]
+position = Vector2( -65, -5 )
+points = PoolVector2Array( 0, 0, 100, 0, 150, 20 )
+width = 4.0
+default_color = Color( 1, 1, 1, 1 )
+gradient = SubResource( 94 )
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="Line2D5" type="Line2D" parent="Menu/Control/Panel/TextureRect3/Navigation/Panel/TextureRect"]
+position = Vector2( 455, -5 )
+scale = Vector2( -1, 1 )
+points = PoolVector2Array( 0, 0, 100, 0, 150, 20 )
+width = 4.0
+default_color = Color( 1, 1, 1, 1 )
+gradient = SubResource( 95 )
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="Line2D3" type="Line2D" parent="Menu/Control/Panel/TextureRect3/Navigation/Panel/TextureRect"]
+position = Vector2( 455, 26 )
+scale = Vector2( -1, 1 )
+points = PoolVector2Array( 0, 0, 100, 0, 150, 20 )
+width = 4.0
+default_color = Color( 1, 1, 1, 1 )
+gradient = SubResource( 95 )
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="Line2D7" type="Line2D" parent="Menu/Control/Panel/TextureRect3/Navigation/Panel/TextureRect"]
+position = Vector2( 455, 122 )
+scale = Vector2( -1, -1 )
+points = PoolVector2Array( 0, 0, 100, 0, 150, 20 )
+width = 4.0
+default_color = Color( 1, 1, 1, 1 )
+gradient = SubResource( 95 )
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="Line2D2" type="Line2D" parent="Menu/Control/Panel/TextureRect3/Navigation/Panel/TextureRect"]
+position = Vector2( 148, 112 )
+points = PoolVector2Array( 0, 0, 0, 100 )
+width = 4.0
+default_color = Color( 1, 1, 1, 1 )
+gradient = SubResource( 96 )
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="Line2D6" type="Line2D" parent="Menu/Control/Panel/TextureRect3/Navigation/Panel/TextureRect"]
+position = Vector2( 328, 69 )
+points = PoolVector2Array( 0, 0, 127, 0 )
+width = 4.0
+default_color = Color( 1, 1, 1, 1 )
+gradient = SubResource( 97 )
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="Line2D8" type="Line2D" parent="Menu/Control/Panel/TextureRect3/Navigation/Panel/TextureRect"]
+position = Vector2( 272, 82 )
+points = PoolVector2Array( 0, 0, 30, 80, 183, 80 )
+width = 4.0
+default_color = Color( 1, 1, 1, 1 )
+gradient = SubResource( 98 )
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="Label" type="Label" parent="Menu/Control/Panel/TextureRect3/Navigation/Panel/TextureRect"]
+margin_left = -75.0
+margin_top = 14.0
+margin_right = 44.0
+margin_bottom = 34.0
+custom_fonts/font = SubResource( 93 )
+text = "NAVIGATE GAMES"
+align = 1
+
+[node name="Label9" type="Label" parent="Menu/Control/Panel/TextureRect3/Navigation/Panel/TextureRect"]
+margin_left = 201.0
+margin_top = -27.0
+margin_right = 320.0
+margin_bottom = -7.0
+custom_fonts/font = SubResource( 93 )
+text = "OPEN MENU"
+align = 1
+
+[node name="Label2" type="Label" parent="Menu/Control/Panel/TextureRect3/Navigation/Panel/TextureRect"]
+margin_left = -75.0
+margin_top = -27.0
+margin_right = 44.0
+margin_bottom = -7.0
+custom_fonts/font = SubResource( 93 )
+text = "SWITCH TIMELINE"
+align = 1
+
+[node name="Label3" type="Label" parent="Menu/Control/Panel/TextureRect3/Navigation/Panel/TextureRect"]
+margin_left = 344.0
+margin_top = -27.0
+margin_right = 463.0
+margin_bottom = -7.0
+custom_fonts/font = SubResource( 93 )
+text = "SWITCH TIMELINE"
+align = 1
+
+[node name="Label4" type="Label" parent="Menu/Control/Panel/TextureRect3/Navigation/Panel/TextureRect"]
+margin_left = 344.0
+margin_top = 3.0
+margin_right = 463.0
+margin_bottom = 23.0
+custom_fonts/font = SubResource( 93 )
+text = "QUIT"
+align = 1
+
+[node name="Label5" type="Label" parent="Menu/Control/Panel/TextureRect3/Navigation/Panel/TextureRect"]
+margin_left = 345.0
+margin_top = 100.0
+margin_right = 464.0
+margin_bottom = 120.0
+custom_fonts/font = SubResource( 93 )
+text = "CONFIRM"
+align = 1
+
+[node name="Label6" type="Label" parent="Menu/Control/Panel/TextureRect3/Navigation/Panel/TextureRect"]
+margin_left = 345.0
+margin_top = 46.0
+margin_right = 464.0
+margin_bottom = 66.0
+custom_fonts/font = SubResource( 93 )
+text = "CANCEL"
+align = 1
+
+[node name="Label7" type="Label" parent="Menu/Control/Panel/TextureRect3/Navigation/Panel/TextureRect"]
+margin_left = 345.0
+margin_top = 139.0
+margin_right = 464.0
+margin_bottom = 159.0
+custom_fonts/font = SubResource( 93 )
+text = "CHANGE THEME"
+align = 1
+
+[node name="Label8" type="Label" parent="Menu/Control/Panel/TextureRect3/Navigation/Panel/TextureRect"]
+margin_left = 89.0
+margin_top = 216.0
+margin_right = 208.0
+margin_bottom = 236.0
+custom_fonts/font = SubResource( 93 )
+text = "NAVIGATE GAMES"
+align = 1
+
+[node name="Options" type="Control" parent="Menu/Control/Panel/TextureRect3"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 50.0
+margin_top = 22.0
+margin_right = -23.9996
+margin_bottom = -23.0
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Panel" type="Panel" parent="Menu/Control/Panel/TextureRect3/Options"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 100 )
+
+[node name="Label" type="Label" parent="Menu/Control/Panel/TextureRect3/Options/Panel"]
+light_mask = 6
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -93.0
+margin_right = 93.0
+margin_bottom = 45.0
+custom_fonts/font = SubResource( 101 )
+text = "OPTIONS"
+align = 1
+
+[node name="Polygon2D" type="Polygon2D" parent="Menu/Control/Panel/TextureRect3/Options/Panel/Label"]
+light_mask = 6
+material = SubResource( 88 )
+position = Vector2( 14.4999, 40 )
+scale = Vector2( 0.65, 1 )
+polygon = PoolVector2Array( 10, 0, 230, 0, 230, 5, 10, 5 )
+
+[node name="Light2D" type="Light2D" parent="Menu/Control/Panel/TextureRect3/Options/Panel/Label/Polygon2D"]
+position = Vector2( 120.5, 2 )
+scale = Vector2( 3.45313, 0.546875 )
+texture = SubResource( 91 )
+energy = 0.0
+range_item_cull_mask = 7
+
+[node name="Control" type="Control" parent="Menu/Control/Panel/TextureRect3/Options/Panel"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -267.0
+margin_right = -0.000183105
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Menu/Control/Panel/TextureRect3/Options/Panel/Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/separation = 34
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Menu/Control/Panel/TextureRect3/Options/Panel/Control/HBoxContainer"]
+margin_right = 277.0
+margin_bottom = 267.0
+size_flags_horizontal = 3
+custom_constants/separation = 9
+
+[node name="Label" type="Label" parent="Menu/Control/Panel/TextureRect3/Options/Panel/Control/HBoxContainer/VBoxContainer"]
+margin_right = 277.0
+margin_bottom = 33.0
+custom_fonts/font = SubResource( 102 )
+text = "SOUND"
+align = 1
+
+[node name="Polygon2D" type="TextureRect" parent="Menu/Control/Panel/TextureRect3/Options/Panel/Control/HBoxContainer/VBoxContainer/Label"]
+margin_left = 68.0
+margin_top = 29.0
+margin_right = 211.0
+margin_bottom = 34.0
+texture = SubResource( 104 )
+expand = true
+
+[node name="Buttons" type="VBoxContainer" parent="Menu/Control/Panel/TextureRect3/Options/Panel/Control/HBoxContainer/VBoxContainer"]
+margin_top = 42.0
+margin_right = 277.0
+margin_bottom = 267.0
+size_flags_vertical = 3
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Menu/Control/Panel/TextureRect3/Options/Panel/Control/HBoxContainer/VBoxContainer/Buttons"]
+margin_right = 277.0
+margin_bottom = 225.0
+rect_clip_content = false
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Menu/Control/Panel/TextureRect3/Options/Panel/Control/HBoxContainer/VBoxContainer/Buttons/ScrollContainer"]
+margin_right = 277.0
+margin_bottom = 112.0
+size_flags_horizontal = 3
+size_flags_vertical = 9
+custom_constants/separation = 12
+
+[node name="Volume" type="Panel" parent="Menu/Control/Panel/TextureRect3/Options/Panel/Control/HBoxContainer/VBoxContainer/Buttons/ScrollContainer/VBoxContainer"]
+margin_right = 277.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 0, 50 )
+size_flags_horizontal = 9
+size_flags_vertical = 9
+custom_styles/panel = SubResource( 110 )
+
+[node name="Label" type="Label" parent="Menu/Control/Panel/TextureRect3/Options/Panel/Control/HBoxContainer/VBoxContainer/Buttons/ScrollContainer/VBoxContainer/Volume"]
+anchor_right = 1.0
+margin_bottom = 20.0
+custom_fonts/font = SubResource( 111 )
+text = "Sounds"
+align = 1
+
+[node name="Button3" type="Control" parent="Menu/Control/Panel/TextureRect3/Options/Panel/Control/HBoxContainer/VBoxContainer/Buttons/ScrollContainer/VBoxContainer/Volume"]
+light_mask = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 200, 40 )
+mouse_filter = 2
+size_flags_horizontal = 2
+size_flags_vertical = 9
+theme = ExtResource( 40 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="VSlider" type="HSlider" parent="Menu/Control/Panel/TextureRect3/Options/Panel/Control/HBoxContainer/VBoxContainer/Buttons/ScrollContainer/VBoxContainer/Volume/Button3"]
+margin_left = 41.0
+margin_right = 234.0
+margin_bottom = 64.0
+focus_neighbour_left = NodePath(".")
+focus_neighbour_top = NodePath("../../../Volume2/Button3/VSlider")
+focus_neighbour_right = NodePath(".")
+focus_neighbour_bottom = NodePath("../../../Volume2/Button3/VSlider")
+focus_next = NodePath("../../../Volume2/Button3/VSlider")
+focus_previous = NodePath("../../../Volume2/Button3/VSlider")
+mouse_filter = 2
+custom_icons/grabber_highlight = SubResource( 135 )
+custom_icons/grabber = SubResource( 135 )
+custom_styles/slider = SubResource( 141 )
+custom_styles/grabber_area_highlight = SubResource( 138 )
+custom_styles/grabber_area = SubResource( 138 )
+max_value = 1.0
+step = 0.01
+value = 1.0
+script = ExtResource( 45 )
+bus_name = "Sounds"
+
+[node name="Volume2" type="Panel" parent="Menu/Control/Panel/TextureRect3/Options/Panel/Control/HBoxContainer/VBoxContainer/Buttons/ScrollContainer/VBoxContainer"]
+margin_top = 62.0
+margin_right = 277.0
+margin_bottom = 112.0
+rect_min_size = Vector2( 0, 50 )
+size_flags_horizontal = 9
+size_flags_vertical = 9
+custom_styles/panel = SubResource( 110 )
+
+[node name="Label" type="Label" parent="Menu/Control/Panel/TextureRect3/Options/Panel/Control/HBoxContainer/VBoxContainer/Buttons/ScrollContainer/VBoxContainer/Volume2"]
+anchor_right = 1.0
+margin_bottom = 20.0
+custom_fonts/font = SubResource( 111 )
+text = "Music"
+align = 1
+
+[node name="Button3" type="Control" parent="Menu/Control/Panel/TextureRect3/Options/Panel/Control/HBoxContainer/VBoxContainer/Buttons/ScrollContainer/VBoxContainer/Volume2"]
+light_mask = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 200, 40 )
+mouse_filter = 2
+size_flags_horizontal = 2
+size_flags_vertical = 9
+theme = ExtResource( 40 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="VSlider" type="HSlider" parent="Menu/Control/Panel/TextureRect3/Options/Panel/Control/HBoxContainer/VBoxContainer/Buttons/ScrollContainer/VBoxContainer/Volume2/Button3"]
+margin_left = 41.0
+margin_right = 234.0
+margin_bottom = 64.0
+focus_neighbour_left = NodePath(".")
+focus_neighbour_top = NodePath("../../../Volume/Button3/VSlider")
+focus_neighbour_right = NodePath(".")
+focus_neighbour_bottom = NodePath("../../../Volume/Button3/VSlider")
+focus_next = NodePath("../../../Volume/Button3/VSlider")
+focus_previous = NodePath("../../../Volume/Button3/VSlider")
+mouse_filter = 2
+custom_icons/grabber_highlight = SubResource( 135 )
+custom_icons/grabber = SubResource( 135 )
+custom_styles/slider = SubResource( 141 )
+custom_styles/grabber_area_highlight = SubResource( 138 )
+custom_styles/grabber_area = SubResource( 138 )
+max_value = 1.0
+step = 0.01
+value = 1.0
+script = ExtResource( 45 )
+bus_name = "Music"
+
+[node name="Node2D" type="Node2D" parent="Menu/Control/Panel/TextureRect3/Options/Panel/Control/HBoxContainer/VBoxContainer/Buttons/ScrollContainer/VBoxContainer"]
+material = SubResource( 57 )
+
+[node name="Light2D" type="Light2D" parent="Menu/Control/Panel/TextureRect3/Options/Panel/Control/HBoxContainer/VBoxContainer/Buttons/ScrollContainer/VBoxContainer/Node2D"]
+position = Vector2( 137.5, 24.75 )
+scale = Vector2( 0.942951, 55.5 )
+texture = SubResource( 108 )
+range_item_cull_mask = 8
+
+[node name="Polygon2D" type="Polygon2D" parent="Menu/Control/Panel/TextureRect3/Options/Panel/Control/HBoxContainer/VBoxContainer/Buttons/ScrollContainer/VBoxContainer/Node2D"]
+light_mask = 8
+material = SubResource( 60 )
+position = Vector2( -10, -363.348 )
+scale = Vector2( 1, 1.21739 )
+polygon = PoolVector2Array( 11, 342, 8.85246, 342, 7, 342, 7, 296, 11, 296 )
+
+[node name="Polygon2D3" type="Polygon2D" parent="Menu/Control/Panel/TextureRect3/Options/Panel/Control/HBoxContainer/VBoxContainer/Buttons/ScrollContainer/VBoxContainer/Node2D"]
+light_mask = 8
+material = SubResource( 60 )
+position = Vector2( 267, -363.348 )
+scale = Vector2( 1, 1.21739 )
+polygon = PoolVector2Array( 11, 342, 8.78598, 342, 7, 342, 7, 296, 11, 296 )
+
+[node name="Polygon2D2" type="Polygon2D" parent="Menu/Control/Panel/TextureRect3/Options/Panel/Control/HBoxContainer/VBoxContainer/Buttons/ScrollContainer/VBoxContainer/Node2D"]
+light_mask = 8
+material = SubResource( 60 )
+position = Vector2( -11.4367, -299 )
+scale = Vector2( 1.13061, 1 )
+polygon = PoolVector2Array( 11, 296, 256, 296, 256, 300, 11, 300 )
+
+[node name="Polygon2D4" type="Polygon2D" parent="Menu/Control/Panel/TextureRect3/Options/Panel/Control/HBoxContainer/VBoxContainer/Buttons/ScrollContainer/VBoxContainer/Node2D"]
+light_mask = 8
+material = SubResource( 60 )
+position = Vector2( -11.4367, -247 )
+scale = Vector2( 1.13061, 1 )
+polygon = PoolVector2Array( 11, 296, 256, 296, 256, 298, 256, 300, 11, 300 )
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Menu/Control/Panel/TextureRect3/Options/Panel/Control/HBoxContainer"]
+margin_left = 311.0
+margin_right = 588.0
+margin_bottom = 267.0
+size_flags_horizontal = 3
+custom_constants/separation = 9
+
+[node name="CassetteTapes" type="Control" parent="Menu/Control/Panel/TextureRect3"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 50.0
+margin_top = 22.0
+margin_right = -23.9996
+margin_bottom = -23.0
+
+[node name="Panel" type="Panel" parent="Menu/Control/Panel/TextureRect3/CassetteTapes"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 86 )
+
+[node name="Label" type="Label" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel"]
+light_mask = 6
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -93.0
+margin_right = 93.0
+margin_bottom = 45.0
+custom_fonts/font = SubResource( 99 )
+text = "SOUNDTRACK"
+align = 1
+
+[node name="Polygon2D" type="Polygon2D" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/Label"]
+light_mask = 6
+material = SubResource( 88 )
+position = Vector2( -25.5, 40 )
+polygon = PoolVector2Array( 10, 0, 230, 0, 230, 5, 10, 5 )
+
+[node name="Light2D" type="Light2D" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/Label/Polygon2D"]
+self_modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 120.5, 2 )
+scale = Vector2( 3.45313, 0.546875 )
+texture = SubResource( 91 )
+energy = 0.0
+range_item_cull_mask = 7
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 69.0
+margin_right = -0.000427246
+custom_constants/separation = 20
+
+[node name="Node2D" type="Node2D" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer"]
+material = SubResource( 57 )
+
+[node name="Light2D" type="Light2D" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Node2D"]
+position = Vector2( 137.5, 24.75 )
+scale = Vector2( 0.942951, 55.5 )
+texture = SubResource( 108 )
+range_item_cull_mask = 8
+
+[node name="Polygon2D" type="Polygon2D" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Node2D"]
+light_mask = 8
+material = SubResource( 60 )
+position = Vector2( -10, -363.348 )
+scale = Vector2( 1, 1.21739 )
+polygon = PoolVector2Array( 11, 342, 8.85246, 342, 7, 342, 7, 296, 11, 296 )
+
+[node name="Polygon2D3" type="Polygon2D" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Node2D"]
+light_mask = 8
+material = SubResource( 60 )
+position = Vector2( 242, -363.348 )
+scale = Vector2( 1, 1.21739 )
+polygon = PoolVector2Array( 11, 342, 8.78598, 342, 7, 342, 7, 296, 11, 296 )
+
+[node name="Polygon2D2" type="Polygon2D" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Node2D"]
+light_mask = 8
+material = SubResource( 60 )
+position = Vector2( -10.3143, -299 )
+scale = Vector2( 1.02857, 1 )
+polygon = PoolVector2Array( 11, 296, 256, 296, 256, 300, 11, 300 )
+
+[node name="Polygon2D4" type="Polygon2D" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Node2D"]
+light_mask = 8
+material = SubResource( 60 )
+position = Vector2( -10.3143, -247 )
+scale = Vector2( 1.02857, 1 )
+polygon = PoolVector2Array( 11, 296, 256, 296, 256, 299, 256, 300, 11, 300 )
+
+[node name="Panel" type="Panel" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer"]
+margin_right = 283.0
+margin_bottom = 267.0
+size_flags_horizontal = 3
+custom_styles/panel = SubResource( 157 )
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = -20.0
+mouse_filter = 2
+theme = SubResource( 156 )
+follow_focus = true
+scroll_horizontal_enabled = false
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel/ScrollContainer"]
+margin_right = 283.0
+margin_bottom = 435.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 5
+
+[node name="MGS3" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
+margin_right = 250.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 250, 50 )
+rect_clip_content = true
+focus_neighbour_left = NodePath(".")
+focus_neighbour_top = NodePath("../MGS4")
+focus_neighbour_right = NodePath(".")
+focus_neighbour_bottom = NodePath("../MGSPW")
+focus_next = NodePath(".")
+focus_previous = NodePath(".")
+mouse_filter = 2
+size_flags_horizontal = 0
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+button_mask = 0
+script = ExtResource( 18 )
+TrackGroup = NodePath("../../../../Panel2/MGS3/ScrollContainer/VBoxContainer/Button")
+
+[node name="TextureProgress" type="TextureRect" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel/ScrollContainer/VBoxContainer/MGS3"]
+light_mask = 32
+material = SubResource( 161 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 13.0
+margin_top = 5.0
+margin_right = 3.0
+margin_bottom = -5.0
+mouse_filter = 2
+texture = ExtResource( 46 )
+expand = true
+stretch_mode = 6
+
+[node name="MGSPW" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
+margin_top = 55.0
+margin_right = 250.0
+margin_bottom = 105.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_left = NodePath(".")
+focus_neighbour_top = NodePath("../MGS3")
+focus_neighbour_right = NodePath(".")
+focus_neighbour_bottom = NodePath("../MGSGZ")
+focus_next = NodePath(".")
+focus_previous = NodePath(".")
+mouse_filter = 2
+size_flags_horizontal = 0
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+button_mask = 0
+script = ExtResource( 18 )
+TrackGroup = NodePath("../../../../Panel2/MGSPW/ScrollContainer/VBoxContainer/Button")
+
+[node name="TextureProgress" type="TextureRect" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel/ScrollContainer/VBoxContainer/MGSPW"]
+light_mask = 32
+material = SubResource( 161 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 13.0
+margin_top = 5.0
+margin_right = 3.0
+margin_bottom = -5.0
+mouse_filter = 2
+texture = ExtResource( 50 )
+expand = true
+stretch_mode = 6
+
+[node name="MGSGZ" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
+margin_top = 110.0
+margin_right = 250.0
+margin_bottom = 160.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_left = NodePath(".")
+focus_neighbour_top = NodePath("../MGSPW")
+focus_neighbour_right = NodePath(".")
+focus_neighbour_bottom = NodePath("../MGSV")
+focus_next = NodePath(".")
+focus_previous = NodePath(".")
+mouse_filter = 2
+size_flags_horizontal = 0
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+button_mask = 0
+script = ExtResource( 18 )
+TrackGroup = NodePath("../../../../Panel2/MGSGZ/ScrollContainer/VBoxContainer/Button")
+
+[node name="TextureProgress" type="TextureRect" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel/ScrollContainer/VBoxContainer/MGSGZ"]
+light_mask = 32
+material = SubResource( 161 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 13.0
+margin_top = 5.0
+margin_right = 3.0
+margin_bottom = -5.0
+mouse_filter = 2
+texture = ExtResource( 53 )
+expand = true
+stretch_mode = 6
+
+[node name="MGSV" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
+margin_top = 165.0
+margin_right = 250.0
+margin_bottom = 215.0
+rect_min_size = Vector2( 250, 50 )
+rect_pivot_offset = Vector2( -161, -99 )
+focus_neighbour_left = NodePath(".")
+focus_neighbour_top = NodePath("../MGSGZ")
+focus_neighbour_right = NodePath(".")
+focus_neighbour_bottom = NodePath("../MG")
+focus_next = NodePath(".")
+focus_previous = NodePath(".")
+mouse_filter = 2
+size_flags_horizontal = 0
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+button_mask = 0
+script = ExtResource( 18 )
+TrackGroup = NodePath("../../../../Panel2/MGSV/ScrollContainer/VBoxContainer/Button")
+
+[node name="TextureProgress" type="TextureRect" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel/ScrollContainer/VBoxContainer/MGSV"]
+light_mask = 32
+material = SubResource( 161 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 13.0
+margin_top = 5.0
+margin_right = 3.0
+margin_bottom = -5.0
+mouse_filter = 2
+texture = ExtResource( 48 )
+expand = true
+stretch_mode = 6
+
+[node name="MG" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
+margin_top = 220.0
+margin_right = 250.0
+margin_bottom = 270.0
+rect_min_size = Vector2( 250, 50 )
+rect_pivot_offset = Vector2( -360, -88 )
+focus_neighbour_left = NodePath(".")
+focus_neighbour_top = NodePath("../MGSV")
+focus_neighbour_right = NodePath(".")
+focus_neighbour_bottom = NodePath("../MGS")
+focus_next = NodePath(".")
+focus_previous = NodePath(".")
+mouse_filter = 2
+size_flags_horizontal = 0
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+button_mask = 0
+script = ExtResource( 18 )
+TrackGroup = NodePath("../../../../Panel2/MG/ScrollContainer/VBoxContainer/Button")
+
+[node name="TextureProgress" type="TextureRect" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel/ScrollContainer/VBoxContainer/MG"]
+light_mask = 32
+material = SubResource( 161 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 13.0
+margin_top = 5.0
+margin_right = 3.0
+margin_bottom = -5.0
+mouse_filter = 2
+texture = ExtResource( 52 )
+expand = true
+stretch_mode = 6
+
+[node name="MGS" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
+margin_top = 275.0
+margin_right = 250.0
+margin_bottom = 325.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_left = NodePath(".")
+focus_neighbour_top = NodePath("../MG")
+focus_neighbour_right = NodePath(".")
+focus_neighbour_bottom = NodePath("../MGS2")
+focus_next = NodePath(".")
+focus_previous = NodePath(".")
+mouse_filter = 2
+size_flags_horizontal = 0
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+button_mask = 0
+script = ExtResource( 18 )
+TrackGroup = NodePath("../../../../Panel2/MGS/ScrollContainer/VBoxContainer/Button")
+
+[node name="TextureProgress" type="TextureRect" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel/ScrollContainer/VBoxContainer/MGS"]
+light_mask = 32
+material = SubResource( 161 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 13.0
+margin_top = 5.0
+margin_right = 3.0
+margin_bottom = -5.0
+mouse_filter = 2
+texture = ExtResource( 51 )
+expand = true
+stretch_mode = 6
+
+[node name="MGS2" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
+margin_top = 330.0
+margin_right = 250.0
+margin_bottom = 380.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_left = NodePath(".")
+focus_neighbour_top = NodePath("../MGS")
+focus_neighbour_right = NodePath(".")
+focus_neighbour_bottom = NodePath("../MGS4")
+focus_next = NodePath(".")
+focus_previous = NodePath(".")
+mouse_filter = 2
+size_flags_horizontal = 0
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+button_mask = 0
+script = ExtResource( 18 )
+TrackGroup = NodePath("../../../../Panel2/MGS2/ScrollContainer/VBoxContainer/Button")
+
+[node name="TextureProgress" type="TextureRect" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel/ScrollContainer/VBoxContainer/MGS2"]
+light_mask = 32
+material = SubResource( 161 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 13.0
+margin_top = 5.0
+margin_right = 3.0
+margin_bottom = -5.0
+mouse_filter = 2
+texture = ExtResource( 49 )
+expand = true
+stretch_mode = 6
+
+[node name="MGS4" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
+margin_top = 385.0
+margin_right = 250.0
+margin_bottom = 435.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_left = NodePath(".")
+focus_neighbour_top = NodePath("../MGS2")
+focus_neighbour_right = NodePath(".")
+focus_neighbour_bottom = NodePath("../MGS3")
+focus_next = NodePath(".")
+focus_previous = NodePath(".")
+mouse_filter = 2
+size_flags_horizontal = 0
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+button_mask = 0
+script = ExtResource( 18 )
+TrackGroup = NodePath("../../../../Panel2/MGS4/ScrollContainer/VBoxContainer/Button")
+
+[node name="TextureProgress" type="TextureRect" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel/ScrollContainer/VBoxContainer/MGS4"]
+light_mask = 32
+material = SubResource( 161 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 13.0
+margin_top = 5.0
+margin_right = 3.0
+margin_bottom = -5.0
+mouse_filter = 2
+texture = ExtResource( 47 )
+expand = true
+stretch_mode = 6
+
+[node name="Panel2" type="Panel" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer"]
+margin_left = 303.0
+margin_right = 587.0
+margin_bottom = 267.0
+size_flags_horizontal = 3
+custom_styles/panel = SubResource( 158 )
+
+[node name="MGS3" type="Panel" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 159 )
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS3"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = SubResource( 156 )
+follow_focus = true
+scroll_horizontal_enabled = false
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS3/ScrollContainer"]
+margin_right = 284.0
+margin_bottom = 752.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Button" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS3/ScrollContainer/VBoxContainer"]
+margin_right = 250.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_left = NodePath(".")
+focus_neighbour_top = NodePath("../Button14")
+focus_neighbour_right = NodePath(".")
+focus_neighbour_bottom = NodePath("../Button2")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGS3")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "The World Needs Only One Big Boss"
+script = ExtResource( 41 )
+Song = 2
+
+[node name="Button2" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS3/ScrollContainer/VBoxContainer"]
+margin_top = 54.0
+margin_right = 250.0
+margin_bottom = 104.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_left = NodePath(".")
+focus_neighbour_top = NodePath("../Button")
+focus_neighbour_right = NodePath(".")
+focus_neighbour_bottom = NodePath("../Button3")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGS3")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "Metal Gear Saga"
+script = ExtResource( 41 )
+Song = 3
+
+[node name="Button3" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS3/ScrollContainer/VBoxContainer"]
+margin_top = 108.0
+margin_right = 250.0
+margin_bottom = 158.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_left = NodePath(".")
+focus_neighbour_top = NodePath("../Button2")
+focus_neighbour_right = NodePath(".")
+focus_neighbour_bottom = NodePath("../Button4")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGS3")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "CQC"
+script = ExtResource( 41 )
+Song = 4
+
+[node name="Button4" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS3/ScrollContainer/VBoxContainer"]
+margin_top = 162.0
+margin_right = 250.0
+margin_bottom = 212.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button3")
+focus_neighbour_bottom = NodePath("../Button5")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGS3")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "Ocelot youth"
+script = ExtResource( 41 )
+Song = 5
+
+[node name="Button5" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS3/ScrollContainer/VBoxContainer"]
+margin_top = 216.0
+margin_right = 250.0
+margin_bottom = 266.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button4")
+focus_neighbour_bottom = NodePath("../Button6")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGS3")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "on the ground"
+script = ExtResource( 41 )
+Song = 6
+
+[node name="Button6" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS3/ScrollContainer/VBoxContainer"]
+margin_top = 270.0
+margin_right = 250.0
+margin_bottom = 320.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button5")
+focus_neighbour_bottom = NodePath("../Button7")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGS3")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "Virtuous Mission"
+script = ExtResource( 41 )
+Song = 7
+
+[node name="Button7" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS3/ScrollContainer/VBoxContainer"]
+margin_top = 324.0
+margin_right = 250.0
+margin_bottom = 374.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button6")
+focus_neighbour_bottom = NodePath("../Button8")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGS3")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "Battle in the base"
+script = ExtResource( 41 )
+Song = 8
+
+[node name="Button8" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS3/ScrollContainer/VBoxContainer"]
+margin_top = 378.0
+margin_right = 250.0
+margin_bottom = 428.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button7")
+focus_neighbour_bottom = NodePath("../Button9")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGS3")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "taking on the shagohod"
+script = ExtResource( 41 )
+Song = 9
+
+[node name="Button9" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS3/ScrollContainer/VBoxContainer"]
+margin_top = 432.0
+margin_right = 250.0
+margin_bottom = 482.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button8")
+focus_neighbour_bottom = NodePath("../Button10")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGS3")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "last showdown"
+script = ExtResource( 41 )
+Song = 10
+
+[node name="Button10" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS3/ScrollContainer/VBoxContainer"]
+margin_top = 486.0
+margin_right = 250.0
+margin_bottom = 536.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button9")
+focus_neighbour_bottom = NodePath("../Button11")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGS3")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "old metal gear"
+script = ExtResource( 41 )
+Song = 11
+
+[node name="Button11" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS3/ScrollContainer/VBoxContainer"]
+margin_top = 540.0
+margin_right = 250.0
+margin_bottom = 590.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button10")
+focus_neighbour_bottom = NodePath("../Button12")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGS3")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "surfing quitar"
+script = ExtResource( 41 )
+Song = 12
+
+[node name="Button12" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS3/ScrollContainer/VBoxContainer"]
+margin_top = 594.0
+margin_right = 250.0
+margin_bottom = 644.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button11")
+focus_neighbour_bottom = NodePath("../Button13")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGS3")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "debriefing"
+script = ExtResource( 41 )
+Song = 13
+
+[node name="Button13" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS3/ScrollContainer/VBoxContainer"]
+margin_top = 648.0
+margin_right = 250.0
+margin_bottom = 698.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button12")
+focus_neighbour_bottom = NodePath("../Button14")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGS3")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "ending theme"
+script = ExtResource( 41 )
+Song = 14
+
+[node name="Button14" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS3/ScrollContainer/VBoxContainer"]
+margin_top = 702.0
+margin_right = 250.0
+margin_bottom = 752.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button13")
+focus_neighbour_bottom = NodePath("../Button")
+focus_next = NodePath("../Button")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGS3")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "snake eater"
+script = ExtResource( 41 )
+Song = 1
+
+[node name="MGSPW" type="Panel" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 159 )
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGSPW"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = SubResource( 156 )
+follow_focus = true
+scroll_horizontal_enabled = false
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGSPW/ScrollContainer"]
+margin_right = 284.0
+margin_bottom = 590.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Button" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGSPW/ScrollContainer/VBoxContainer"]
+margin_right = 250.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button11")
+focus_neighbour_bottom = NodePath("../Button2")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGSPW")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "Peace Walker Main Theme"
+script = ExtResource( 41 )
+Song = 15
+
+[node name="Button2" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGSPW/ScrollContainer/VBoxContainer"]
+margin_top = 54.0
+margin_right = 250.0
+margin_bottom = 104.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button")
+focus_neighbour_bottom = NodePath("../Button3")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGSPW")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "Zero Allies"
+script = ExtResource( 41 )
+Song = 16
+
+[node name="Button3" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGSPW/ScrollContainer/VBoxContainer"]
+margin_top = 108.0
+margin_right = 250.0
+margin_bottom = 158.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button2")
+focus_neighbour_bottom = NodePath("../Button4")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGSPW")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "Outer Heaven"
+script = ExtResource( 41 )
+Song = 17
+
+[node name="Button4" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGSPW/ScrollContainer/VBoxContainer"]
+margin_top = 162.0
+margin_right = 250.0
+margin_bottom = 212.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button3")
+focus_neighbour_bottom = NodePath("../Button5")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGSPW")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "Mother Base"
+script = ExtResource( 41 )
+Song = 18
+
+[node name="Button5" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGSPW/ScrollContainer/VBoxContainer"]
+margin_top = 216.0
+margin_right = 250.0
+margin_bottom = 266.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button4")
+focus_neighbour_bottom = NodePath("../Button6")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGSPW")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "Clients"
+script = ExtResource( 41 )
+Song = 19
+
+[node name="Button6" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGSPW/ScrollContainer/VBoxContainer"]
+margin_top = 270.0
+margin_right = 250.0
+margin_bottom = 320.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button5")
+focus_neighbour_bottom = NodePath("../Button7")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGSPW")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "Entry Gate"
+script = ExtResource( 41 )
+Song = 20
+
+[node name="Button7" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGSPW/ScrollContainer/VBoxContainer"]
+margin_top = 324.0
+margin_right = 250.0
+margin_bottom = 374.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button6")
+focus_neighbour_bottom = NodePath("../Button8")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGSPW")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "Show Time"
+script = ExtResource( 41 )
+Song = 21
+
+[node name="Button8" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGSPW/ScrollContainer/VBoxContainer"]
+margin_top = 378.0
+margin_right = 250.0
+margin_bottom = 428.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button7")
+focus_neighbour_bottom = NodePath("../Button9")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGSPW")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "Confession"
+script = ExtResource( 41 )
+Song = 22
+
+[node name="Button9" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGSPW/ScrollContainer/VBoxContainer"]
+margin_top = 432.0
+margin_right = 250.0
+margin_bottom = 482.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button8")
+focus_neighbour_bottom = NodePath("../Button10")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGSPW")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "Koi no Yokushiryoku"
+script = ExtResource( 41 )
+Song = 23
+
+[node name="Button10" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGSPW/ScrollContainer/VBoxContainer"]
+margin_top = 486.0
+margin_right = 250.0
+margin_bottom = 536.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button9")
+focus_neighbour_bottom = NodePath("../Button11")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGSPW")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "Calling To The Night"
+script = ExtResource( 41 )
+Song = 24
+
+[node name="Button11" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGSPW/ScrollContainer/VBoxContainer"]
+margin_top = 540.0
+margin_right = 250.0
+margin_bottom = 590.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button10")
+focus_neighbour_bottom = NodePath("../Button")
+focus_next = NodePath("../Button")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGSPW")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "Heavens Divide"
+script = ExtResource( 41 )
+Song = 25
+
+[node name="MGSGZ" type="Panel" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 159 )
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGSGZ"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = SubResource( 156 )
+follow_focus = true
+scroll_horizontal_enabled = false
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGSGZ/ScrollContainer"]
+margin_right = 284.0
+margin_bottom = 267.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Button" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGSGZ/ScrollContainer/VBoxContainer"]
+margin_right = 250.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button2")
+focus_neighbour_bottom = NodePath("../Button2")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGSGZ")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "Ground Zeroes Theme"
+script = ExtResource( 41 )
+Song = 26
+
+[node name="Button2" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGSGZ/ScrollContainer/VBoxContainer"]
+margin_top = 54.0
+margin_right = 250.0
+margin_bottom = 104.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button")
+focus_neighbour_bottom = NodePath("../Button")
+focus_next = NodePath("../Button")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGSGZ")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "Tactical Operation"
+script = ExtResource( 41 )
+Song = 27
+
+[node name="MGSV" type="Panel" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 159 )
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGSV"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 20.0
+theme = SubResource( 156 )
+follow_focus = true
+scroll_horizontal_enabled = false
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGSV/ScrollContainer"]
+margin_right = 284.0
+margin_bottom = 247.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Button" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGSV/ScrollContainer/VBoxContainer"]
+margin_right = 250.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath(".")
+focus_neighbour_bottom = NodePath(".")
+focus_next = NodePath(".")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGSV")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "The Man Who Sold The World"
+script = ExtResource( 41 )
+Song = 28
+
+[node name="MG" type="Panel" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 159 )
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MG"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = SubResource( 156 )
+follow_focus = true
+scroll_horizontal_enabled = false
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MG/ScrollContainer"]
+margin_right = 284.0
+margin_bottom = 536.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Button" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MG/ScrollContainer/VBoxContainer"]
+margin_right = 250.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button10")
+focus_neighbour_bottom = NodePath("../Button2")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MG")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "Theme Of Solid Snake"
+script = ExtResource( 41 )
+Song = 35
+
+[node name="Button2" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MG/ScrollContainer/VBoxContainer"]
+margin_top = 54.0
+margin_right = 250.0
+margin_bottom = 104.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button")
+focus_neighbour_bottom = NodePath("../Button3")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MG")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "Zanzibar Breeze"
+script = ExtResource( 41 )
+Song = 30
+
+[node name="Button3" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MG/ScrollContainer/VBoxContainer"]
+margin_top = 108.0
+margin_right = 250.0
+margin_bottom = 158.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath(".")
+focus_neighbour_bottom = NodePath("../Button4")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MG")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "Level 1 Warning"
+script = ExtResource( 41 )
+Song = 31
+
+[node name="Button4" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MG/ScrollContainer/VBoxContainer"]
+margin_top = 162.0
+margin_right = 250.0
+margin_bottom = 212.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button3")
+focus_neighbour_bottom = NodePath("../Button5")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MG")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "Advance Immediately"
+script = ExtResource( 41 )
+Song = 32
+
+[node name="Button5" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MG/ScrollContainer/VBoxContainer"]
+margin_top = 216.0
+margin_right = 250.0
+margin_bottom = 266.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button4")
+focus_neighbour_bottom = NodePath("../Button6")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MG")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "Frequency 140.85"
+script = ExtResource( 41 )
+Song = 33
+
+[node name="Button6" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MG/ScrollContainer/VBoxContainer"]
+margin_top = 270.0
+margin_right = 250.0
+margin_bottom = 320.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button5")
+focus_neighbour_bottom = NodePath("../Button7")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MG")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "The Front Line"
+script = ExtResource( 41 )
+Song = 34
+
+[node name="Button7" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MG/ScrollContainer/VBoxContainer"]
+margin_top = 324.0
+margin_right = 250.0
+margin_bottom = 374.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button6")
+focus_neighbour_bottom = NodePath("../Button8")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MG")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "VR Training"
+script = ExtResource( 41 )
+Song = 57
+
+[node name="Button8" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MG/ScrollContainer/VBoxContainer"]
+margin_top = 378.0
+margin_right = 250.0
+margin_bottom = 428.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button7")
+focus_neighbour_bottom = NodePath("../Button9")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MG")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "Wavelet"
+script = ExtResource( 41 )
+Song = 36
+
+[node name="Button9" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MG/ScrollContainer/VBoxContainer"]
+margin_top = 432.0
+margin_right = 250.0
+margin_bottom = 482.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button8")
+focus_neighbour_bottom = NodePath("../Button10")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MG")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "Tears"
+script = ExtResource( 41 )
+Song = 37
+
+[node name="Button10" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MG/ScrollContainer/VBoxContainer"]
+margin_top = 486.0
+margin_right = 250.0
+margin_bottom = 536.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button9")
+focus_neighbour_bottom = NodePath("../Button")
+focus_next = NodePath("../Button")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MG")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "Red Sun"
+script = ExtResource( 41 )
+Song = 38
+
+[node name="MGS" type="Panel" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 159 )
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = SubResource( 156 )
+follow_focus = true
+scroll_horizontal_enabled = false
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS/ScrollContainer"]
+margin_right = 284.0
+margin_bottom = 482.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Button" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS/ScrollContainer/VBoxContainer"]
+margin_right = 250.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button9")
+focus_neighbour_bottom = NodePath("../Button2")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGS")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "Main Theme"
+script = ExtResource( 41 )
+Song = 39
+
+[node name="Button2" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS/ScrollContainer/VBoxContainer"]
+margin_top = 54.0
+margin_right = 250.0
+margin_bottom = 104.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button")
+focus_neighbour_bottom = NodePath("../Button3")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGS")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "Introduction"
+script = ExtResource( 41 )
+Song = 40
+
+[node name="Button3" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS/ScrollContainer/VBoxContainer"]
+margin_top = 108.0
+margin_right = 250.0
+margin_bottom = 158.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button2")
+focus_neighbour_bottom = NodePath("../Button4")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGS")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "Discovery"
+script = ExtResource( 41 )
+Song = 41
+
+[node name="Button4" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS/ScrollContainer/VBoxContainer"]
+margin_top = 162.0
+margin_right = 250.0
+margin_bottom = 212.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button3")
+focus_neighbour_bottom = NodePath("../Button5")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGS")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "Cavern"
+script = ExtResource( 41 )
+Song = 42
+
+[node name="Button5" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS/ScrollContainer/VBoxContainer"]
+margin_top = 216.0
+margin_right = 250.0
+margin_bottom = 266.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button4")
+focus_neighbour_bottom = NodePath("../Button6")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGS")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "Warhead Storage"
+script = ExtResource( 41 )
+Song = 43
+
+[node name="Button6" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS/ScrollContainer/VBoxContainer"]
+margin_top = 270.0
+margin_right = 250.0
+margin_bottom = 320.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button5")
+focus_neighbour_bottom = NodePath("../Button7")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGS")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "Colosseo"
+script = ExtResource( 41 )
+Song = 44
+
+[node name="Button7" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS/ScrollContainer/VBoxContainer"]
+margin_top = 324.0
+margin_right = 250.0
+margin_bottom = 374.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button6")
+focus_neighbour_bottom = NodePath("../Button8")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGS")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "Duel"
+script = ExtResource( 41 )
+Song = 45
+
+[node name="Button8" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS/ScrollContainer/VBoxContainer"]
+margin_top = 378.0
+margin_right = 250.0
+margin_bottom = 428.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button7")
+focus_neighbour_bottom = NodePath("../Button9")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGS")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "Escape"
+script = ExtResource( 41 )
+Song = 46
+
+[node name="Button9" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS/ScrollContainer/VBoxContainer"]
+margin_top = 432.0
+margin_right = 250.0
+margin_bottom = 482.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button8")
+focus_neighbour_bottom = NodePath("../Button")
+focus_next = NodePath("../Button")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGS")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "The Best Is Yet To Come"
+script = ExtResource( 41 )
+Song = 47
+
+[node name="MGS2" type="Panel" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 159 )
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = SubResource( 156 )
+follow_focus = true
+scroll_horizontal_enabled = false
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS2/ScrollContainer"]
+margin_right = 284.0
+margin_bottom = 428.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Button" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS2/ScrollContainer/VBoxContainer"]
+margin_right = 250.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button8")
+focus_neighbour_bottom = NodePath("../Button2")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGS2")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "Main Theme"
+script = ExtResource( 41 )
+Song = 55
+
+[node name="Button2" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS2/ScrollContainer/VBoxContainer"]
+margin_top = 54.0
+margin_right = 250.0
+margin_bottom = 104.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button")
+focus_neighbour_bottom = NodePath("../Button3")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGS2")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "Title Theme"
+script = ExtResource( 41 )
+Song = 49
+
+[node name="Button3" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS2/ScrollContainer/VBoxContainer"]
+margin_top = 108.0
+margin_right = 250.0
+margin_bottom = 158.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button2")
+focus_neighbour_bottom = NodePath("../Button4")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGS2")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "Infiltration"
+script = ExtResource( 41 )
+Song = 50
+
+[node name="Button4" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS2/ScrollContainer/VBoxContainer"]
+margin_top = 162.0
+margin_right = 250.0
+margin_bottom = 212.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button3")
+focus_neighbour_bottom = NodePath("../Button5")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGS2")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "Starboard"
+script = ExtResource( 41 )
+Song = 51
+
+[node name="Button5" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS2/ScrollContainer/VBoxContainer"]
+margin_top = 216.0
+margin_right = 250.0
+margin_bottom = 266.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button4")
+focus_neighbour_bottom = NodePath("../Button6")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGS2")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "Prelude To The Denouement"
+script = ExtResource( 41 )
+Song = 52
+
+[node name="Button6" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS2/ScrollContainer/VBoxContainer"]
+margin_top = 270.0
+margin_right = 250.0
+margin_bottom = 320.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button5")
+focus_neighbour_bottom = NodePath("../Button7")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGS2")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "Alert Theme"
+script = ExtResource( 41 )
+Song = 53
+
+[node name="Button7" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS2/ScrollContainer/VBoxContainer"]
+margin_top = 324.0
+margin_right = 250.0
+margin_bottom = 374.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button6")
+focus_neighbour_bottom = NodePath("../Button8")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGS2")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "Yell Dead Cell"
+script = ExtResource( 41 )
+Song = 54
+
+[node name="Button8" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS2/ScrollContainer/VBoxContainer"]
+margin_top = 378.0
+margin_right = 250.0
+margin_bottom = 428.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath("../Button7")
+focus_neighbour_bottom = NodePath("../Button")
+focus_next = NodePath("../Button")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGS2")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "Boss Battle"
+script = ExtResource( 41 )
+Song = 48
+
+[node name="MGS4" type="Panel" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 159 )
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS4"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = SubResource( 156 )
+follow_focus = true
+scroll_horizontal_enabled = false
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS4/ScrollContainer"]
+margin_right = 284.0
+margin_bottom = 267.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Button" type="Button" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS4/ScrollContainer/VBoxContainer"]
+margin_right = 250.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 250, 50 )
+focus_neighbour_top = NodePath(".")
+focus_neighbour_bottom = NodePath(".")
+focus_next = NodePath(".")
+focus_previous = NodePath("../../../../../Panel/ScrollContainer/VBoxContainer/MGS4")
+mouse_filter = 2
+size_flags_horizontal = 0
+theme = ExtResource( 54 )
+custom_styles/hover = SubResource( 144 )
+custom_styles/pressed = SubResource( 146 )
+custom_styles/focus = SubResource( 147 )
+custom_styles/disabled = SubResource( 148 )
+custom_styles/normal = SubResource( 150 )
+toggle_mode = true
+action_mode = 0
+group = ExtResource( 69 )
+text = "Encounter"
+script = ExtResource( 41 )
+Song = 56
+
+[node name="Polygon2D" type="Polygon2D" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel"]
+light_mask = 6
+material = SubResource( 88 )
+position = Vector2( 295, 49 )
+rotation = 1.5708
+scale = Vector2( 1.294, 1 )
+polygon = PoolVector2Array( 27.0479, 3.05176e-05, 210.201, 3.05176e-05, 210.201, 5.00003, 27.0479, 5.00003 )
+
+[node name="Light2D" type="Light2D" parent="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/Polygon2D"]
+self_modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 122.734, 2 )
+scale = Vector2( 4.28288, 0.546875 )
+texture = SubResource( 91 )
+energy = 0.0
+range_item_cull_mask = 7
+
+[node name="Polygon2D" type="Polygon2D" parent="Menu/Control/Panel"]
+light_mask = 16
+material = SubResource( 77 )
+position = Vector2( -50, 0 )
+polygon = PoolVector2Array( -5, -5, 0.371101, -5, 5, -5, 5, 205, -5, 205 )
+
+[node name="MenuEffects" type="Tween" parent="."]
+
+[connection signal="focus_entered" from="MGS3/Button" to="." method="_on_game_focus_entered" flags=3]
+[connection signal="focus_exited" from="MGS3/Button" to="." method="_on_game_focus_exited"]
+[connection signal="pressed" from="MGS3/Button" to="." method="_on_game_selected"]
+[connection signal="focus_entered" from="MGSPW/Button" to="." method="_on_game_focus_entered" flags=3]
+[connection signal="focus_exited" from="MGSPW/Button" to="." method="_on_game_focus_exited"]
+[connection signal="pressed" from="MGSPW/Button" to="." method="_on_game_selected"]
+[connection signal="focus_entered" from="MGSGZ/Button" to="." method="_on_game_focus_entered" flags=3]
+[connection signal="focus_exited" from="MGSGZ/Button" to="." method="_on_game_focus_exited"]
+[connection signal="pressed" from="MGSGZ/Button" to="." method="_on_game_selected"]
+[connection signal="focus_entered" from="MGSV/Button" to="." method="_on_game_focus_entered" flags=3]
+[connection signal="focus_exited" from="MGSV/Button" to="." method="_on_game_focus_exited"]
+[connection signal="pressed" from="MGSV/Button" to="." method="_on_game_selected"]
+[connection signal="focus_entered" from="MG/Button" to="." method="_on_game_focus_entered" flags=3]
+[connection signal="focus_exited" from="MG/Button" to="." method="_on_game_focus_exited"]
+[connection signal="pressed" from="MG/Button" to="." method="_on_game_selected"]
+[connection signal="focus_entered" from="MGS1/Button" to="." method="_on_game_focus_entered" flags=3]
+[connection signal="focus_exited" from="MGS1/Button" to="." method="_on_game_focus_exited"]
+[connection signal="pressed" from="MGS1/Button" to="." method="_on_game_selected"]
+[connection signal="focus_entered" from="MGS2/Button" to="." method="_on_game_focus_entered" flags=3]
+[connection signal="focus_exited" from="MGS2/Button" to="." method="_on_game_focus_exited"]
+[connection signal="pressed" from="MGS2/Button" to="." method="_on_game_selected"]
+[connection signal="focus_entered" from="MGS4/Button" to="." method="_on_game_focus_entered" flags=3]
+[connection signal="focus_exited" from="MGS4/Button" to="." method="_on_game_focus_exited"]
+[connection signal="pressed" from="MGS4/Button" to="." method="_on_game_selected"]
+[connection signal="focus_entered" from="Menu/Control/VBoxContainer/OptionsButton" to="." method="menu_button_focus_entered" flags=3]
+[connection signal="focus_exited" from="Menu/Control/VBoxContainer/OptionsButton" to="." method="menu_button_focus_exited"]
+[connection signal="pressed" from="Menu/Control/VBoxContainer/OptionsButton" to="." method="options_button_pressed"]
+[connection signal="focus_entered" from="Menu/Control/VBoxContainer/CassettesButton" to="." method="menu_button_focus_entered" flags=3]
+[connection signal="focus_exited" from="Menu/Control/VBoxContainer/CassettesButton" to="." method="menu_button_focus_exited"]
+[connection signal="pressed" from="Menu/Control/VBoxContainer/CassettesButton" to="." method="cassettes_button_pressed"]
+[connection signal="focus_entered" from="Menu/Control/VBoxContainer/NavigationButton" to="." method="menu_button_focus_entered" flags=3]
+[connection signal="focus_exited" from="Menu/Control/VBoxContainer/NavigationButton" to="." method="menu_button_focus_exited"]
+[connection signal="pressed" from="Menu/Control/VBoxContainer/NavigationButton" to="." method="navigation_button_pressed"]
+[connection signal="focus_entered" from="Menu/Control/VBoxContainer/ExitButton" to="." method="menu_button_focus_entered" flags=3]
+[connection signal="focus_exited" from="Menu/Control/VBoxContainer/ExitButton" to="." method="menu_button_focus_exited"]
+[connection signal="pressed" from="Menu/Control/VBoxContainer/ExitButton" to="." method="menu_button_focus_entered"]
+[connection signal="timeout" from="Menu/Control/VBoxContainer/ExitButton/ExitTimer" to="." method="exit_timer_timeout"]
+[connection signal="drag_ended" from="Menu/Control/Panel/TextureRect3/Options/Panel/Control/HBoxContainer/VBoxContainer/Buttons/ScrollContainer/VBoxContainer/Volume/Button3/VSlider" to="." method="produce_slider_sound"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/Options/Panel/Control/HBoxContainer/VBoxContainer/Buttons/ScrollContainer/VBoxContainer/Volume/Button3/VSlider" to="." method="options_sliders_focus_entered"]
+[connection signal="value_changed" from="Menu/Control/Panel/TextureRect3/Options/Panel/Control/HBoxContainer/VBoxContainer/Buttons/ScrollContainer/VBoxContainer/Volume/Button3/VSlider" to="Menu/Control/Panel/TextureRect3/Options/Panel/Control/HBoxContainer/VBoxContainer/Buttons/ScrollContainer/VBoxContainer/Volume/Button3/VSlider" method="_on_VSlider_value_changed"]
+[connection signal="drag_ended" from="Menu/Control/Panel/TextureRect3/Options/Panel/Control/HBoxContainer/VBoxContainer/Buttons/ScrollContainer/VBoxContainer/Volume2/Button3/VSlider" to="." method="produce_slider_sound"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/Options/Panel/Control/HBoxContainer/VBoxContainer/Buttons/ScrollContainer/VBoxContainer/Volume2/Button3/VSlider" to="." method="options_sliders_focus_entered"]
+[connection signal="value_changed" from="Menu/Control/Panel/TextureRect3/Options/Panel/Control/HBoxContainer/VBoxContainer/Buttons/ScrollContainer/VBoxContainer/Volume2/Button3/VSlider" to="Menu/Control/Panel/TextureRect3/Options/Panel/Control/HBoxContainer/VBoxContainer/Buttons/ScrollContainer/VBoxContainer/Volume2/Button3/VSlider" method="_on_VSlider_value_changed"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS3/ScrollContainer/VBoxContainer/Button" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS3/ScrollContainer/VBoxContainer/Button2" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS3/ScrollContainer/VBoxContainer/Button3" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS3/ScrollContainer/VBoxContainer/Button4" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS3/ScrollContainer/VBoxContainer/Button5" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS3/ScrollContainer/VBoxContainer/Button6" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS3/ScrollContainer/VBoxContainer/Button7" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS3/ScrollContainer/VBoxContainer/Button8" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS3/ScrollContainer/VBoxContainer/Button9" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS3/ScrollContainer/VBoxContainer/Button10" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS3/ScrollContainer/VBoxContainer/Button11" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS3/ScrollContainer/VBoxContainer/Button12" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS3/ScrollContainer/VBoxContainer/Button13" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS3/ScrollContainer/VBoxContainer/Button14" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGSPW/ScrollContainer/VBoxContainer/Button" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGSPW/ScrollContainer/VBoxContainer/Button2" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGSPW/ScrollContainer/VBoxContainer/Button3" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGSPW/ScrollContainer/VBoxContainer/Button4" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGSPW/ScrollContainer/VBoxContainer/Button5" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGSPW/ScrollContainer/VBoxContainer/Button6" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGSPW/ScrollContainer/VBoxContainer/Button7" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGSPW/ScrollContainer/VBoxContainer/Button8" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGSPW/ScrollContainer/VBoxContainer/Button9" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGSPW/ScrollContainer/VBoxContainer/Button10" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGSPW/ScrollContainer/VBoxContainer/Button11" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGSGZ/ScrollContainer/VBoxContainer/Button" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGSGZ/ScrollContainer/VBoxContainer/Button2" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGSV/ScrollContainer/VBoxContainer/Button" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MG/ScrollContainer/VBoxContainer/Button" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MG/ScrollContainer/VBoxContainer/Button2" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MG/ScrollContainer/VBoxContainer/Button3" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MG/ScrollContainer/VBoxContainer/Button4" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MG/ScrollContainer/VBoxContainer/Button5" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MG/ScrollContainer/VBoxContainer/Button6" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MG/ScrollContainer/VBoxContainer/Button7" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MG/ScrollContainer/VBoxContainer/Button8" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MG/ScrollContainer/VBoxContainer/Button9" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MG/ScrollContainer/VBoxContainer/Button10" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS/ScrollContainer/VBoxContainer/Button" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS/ScrollContainer/VBoxContainer/Button2" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS/ScrollContainer/VBoxContainer/Button3" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS/ScrollContainer/VBoxContainer/Button4" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS/ScrollContainer/VBoxContainer/Button5" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS/ScrollContainer/VBoxContainer/Button6" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS/ScrollContainer/VBoxContainer/Button7" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS/ScrollContainer/VBoxContainer/Button8" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS/ScrollContainer/VBoxContainer/Button9" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS2/ScrollContainer/VBoxContainer/Button" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS2/ScrollContainer/VBoxContainer/Button2" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS2/ScrollContainer/VBoxContainer/Button3" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS2/ScrollContainer/VBoxContainer/Button4" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS2/ScrollContainer/VBoxContainer/Button5" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS2/ScrollContainer/VBoxContainer/Button6" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS2/ScrollContainer/VBoxContainer/Button7" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS2/ScrollContainer/VBoxContainer/Button8" to="." method="_on_Song_focus_entered"]
+[connection signal="focus_entered" from="Menu/Control/Panel/TextureRect3/CassetteTapes/Panel/HBoxContainer/Panel2/MGS4/ScrollContainer/VBoxContainer/Button" to="." method="_on_Song_focus_entered"]
+
+[editable path="MGS3/Title"]
+[editable path="MGSPW/Title"]
+[editable path="MGSGZ/Title"]
+[editable path="MGSV/Title"]
+[editable path="MG/Title"]
+[editable path="MGS1/Title"]
+[editable path="MGS2/Title"]
+[editable path="MGS4/Title"]
+[editable path="OpeningCamera"]
+[editable path="Menu"]
