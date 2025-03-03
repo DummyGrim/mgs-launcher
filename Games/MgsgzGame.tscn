@@ -1,0 +1,538 @@
+[gd_scene load_steps=24 format=2]
+
+[ext_resource path="res://Textures/Metal-Gear-Solid-V-Ground-Zeroes-feature-2.png" type="Texture" id=1]
+[ext_resource path="res://Textures/Spark.png" type="Texture" id=2]
+[ext_resource path="res://Sway.gd" type="Script" id=3]
+[ext_resource path="res://Game.gd" type="Script" id=4]
+[ext_resource path="res://Titles/MgsgzTitle.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Sway.tscn" type="PackedScene" id=6]
+[ext_resource path="res://LoadingScreen.tscn" type="PackedScene" id=7]
+
+[sub_resource type="Animation" id=18]
+resource_name = "LIGHTNING"
+tracks/0/type = "value"
+tracks/0/path = NodePath("WorldEnvironment:environment:tonemap_exposure")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.6 ),
+"transitions": PoolRealArray( 0.5, -2, -2, 0.5, 2 ),
+"update": 0,
+"values": [ 1.0, 3.67, 1.0, 4.92, 1.0 ]
+}
+
+[sub_resource type="Animation" id=19]
+resource_name = "OPEN"
+tracks/0/type = "value"
+tracks/0/path = NodePath("TextureRect:self_modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.6 ),
+"transitions": PoolRealArray( 0.5, 2 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("TextureRect/Position2D:modulate")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.3, 0.7 ),
+"transitions": PoolRealArray( 1, 0.5, 2 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("TextureRect/Position2D:position")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.3, 0.7 ),
+"transitions": PoolRealArray( 0.5, 2 ),
+"update": 0,
+"values": [ Vector2( 366, 180 ), Vector2( 366, 76 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("WorldEnvironment:environment:tonemap_exposure")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0.1, 0.2, 0.3, 0.4, 0.7 ),
+"transitions": PoolRealArray( 0.5, -2, -2, 0.5, 2 ),
+"update": 0,
+"values": [ 1.0, 3.67, 1.0, 4.92, 1.0 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Particles2D:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0.184314 ) ]
+}
+
+[sub_resource type="Animation" id=20]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("TextureRect:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("TextureRect/Position2D:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Particles2D:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Gradient" id=31]
+interpolation_mode = 1
+colors = PoolColorArray( 0.211765, 0.517647, 0.647059, 0.435294, 0, 0, 0, 0 )
+
+[sub_resource type="GradientTexture" id=9]
+gradient = SubResource( 31 )
+
+[sub_resource type="Curve" id=24]
+_data = [ Vector2( 0.00490196, 0.490909 ), 0.0, 5.06909, 0, 0, Vector2( 1, 0 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=11]
+curve = SubResource( 24 )
+
+[sub_resource type="ParticlesMaterial" id=25]
+emission_shape = 2
+emission_box_extents = Vector3( 350, 1, 1 )
+flag_disable_z = true
+direction = Vector3( 1, 1, 0 )
+spread = 123.95
+gravity = Vector3( 0, 1000, 0 )
+initial_velocity_random = 1.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+linear_accel = 256.2
+radial_accel = 87.72
+scale = 0.34
+scale_random = 0.04
+scale_curve = SubResource( 11 )
+color_ramp = SubResource( 9 )
+
+[sub_resource type="Animation" id=27]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=28]
+resource_name = "SLIDE"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, 0 ) ]
+}
+
+[sub_resource type="Shader" id=17]
+code = "shader_type canvas_item;
+
+uniform float bloomRadius = 1.0;
+uniform float bloomThreshold = 1.0;
+uniform float bloomIntensity = 1.0;
+
+vec3 GetBloomPixel(sampler2D tex, vec2 uv, vec2 texPixelSize) {
+	vec2 uv2 = floor(uv / texPixelSize) * texPixelSize;
+	uv2 += texPixelSize * .001;
+	vec3 tl = max(texture(tex, uv2).rgb - bloomThreshold, 0.0);
+	vec3 tr = max(texture(tex, uv2 + vec2(texPixelSize.x, 0.0)).rgb - bloomThreshold, 0.0);
+	vec3 bl = max(texture(tex, uv2 + vec2(0.0, texPixelSize.y)).rgb - bloomThreshold, 0.0);
+	vec3 br = max(texture(tex, uv2 + vec2(texPixelSize.x, texPixelSize.y)).rgb - bloomThreshold, 0.0);
+	vec2 f = fract( uv / texPixelSize );
+
+	vec3 tA = mix( tl, tr, f.x );
+	vec3 tB = mix( bl, br, f.x );
+
+	return mix( tA, tB, f.y );
+}
+
+vec3 GetBloom(sampler2D tex, vec2 uv, vec2 texPixelSize) {
+	vec3 bloom = vec3(0.0);
+	vec2 off = vec2(1) * texPixelSize * bloomRadius;
+	bloom += GetBloomPixel(tex, uv + off * vec2(-1, -1), texPixelSize * bloomRadius) * 0.292893;
+	bloom += GetBloomPixel(tex, uv + off * vec2(-1, 0), texPixelSize * bloomRadius) * 0.5;
+	bloom += GetBloomPixel(tex, uv + off * vec2(-1, 1), texPixelSize * bloomRadius) * 0.292893;
+	bloom += GetBloomPixel(tex, uv + off * vec2(0, -1), texPixelSize * bloomRadius) * 0.5;
+	bloom += GetBloomPixel(tex, uv + off * vec2(0, 0), texPixelSize * bloomRadius) * 1.0;
+	bloom += GetBloomPixel(tex, uv + off * vec2(0, 1), texPixelSize * bloomRadius) * 0.5;
+	bloom += GetBloomPixel(tex, uv + off * vec2(1, -1), texPixelSize * bloomRadius) * 0.292893;
+	bloom += GetBloomPixel(tex, uv + off * vec2(1, 0), texPixelSize * bloomRadius) * 0.5;
+	bloom += GetBloomPixel(tex, uv + off * vec2(1, 1), texPixelSize * bloomRadius) * 0.292893;
+	bloom /= 4.171573f;
+	return bloom;
+}
+
+void fragment() {
+	vec4 col = texture(TEXTURE, UV);
+	vec3 bloom = GetBloom(TEXTURE, UV, TEXTURE_PIXEL_SIZE);
+	col.rgb += bloom * bloomIntensity;
+	COLOR = col;
+}"
+
+[sub_resource type="ShaderMaterial" id=29]
+shader = SubResource( 17 )
+shader_param/bloomRadius = 100.0
+shader_param/bloomThreshold = 1.0
+shader_param/bloomIntensity = 1.0
+
+[sub_resource type="Environment" id=30]
+background_mode = 4
+glow_enabled = true
+
+[sub_resource type="Animation" id=21]
+resource_local_to_scene = true
+resource_name = "CLOSE"
+tracks/0/type = "value"
+tracks/0/path = NodePath("OpeningCamera/Sprite:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 2, 2, 2 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("OpeningCamera/Sprite:self_modulate")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.5, 1 ),
+"transitions": PoolRealArray( 2, 2 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 1 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "exit"
+} ]
+}
+tracks/3/type = "method"
+tracks/3/path = NodePath(".")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray(  ),
+"transitions": PoolRealArray(  ),
+"values": [  ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Camera2D2:current")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("OpeningCamera:current")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0.5 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=22]
+resource_local_to_scene = true
+resource_name = "OPEN"
+tracks/0/type = "value"
+tracks/0/path = NodePath("OpeningCamera/Sprite:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 2, 2, 2 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("OpeningCamera/Sprite:self_modulate")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 2, 2 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.7 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "start"
+} ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("OpeningCamera:current")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Camera2D2:current")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0.5 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=23]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("OpeningCamera/Sprite:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("OpeningCamera/Sprite:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("WorldEnvironment:environment:tonemap_exposure")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 1.0 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("OpeningCamera:current")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Camera2D2:current")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+
+[node name="MgsGz" type="Node2D"]
+script = ExtResource( 4 )
+Song = 26
+GamePath = "\"C:\\Users\\kwnst\\Documents\\MGS LAUNCHER\\Paths\\METAL GEAR SOLID V GROUND ZEROES.lnk\""
+MoveableObject = NodePath("TextureRect/Position2D")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/LIGHTNING = SubResource( 18 )
+anims/OPEN = SubResource( 19 )
+anims/RESET = SubResource( 20 )
+
+[node name="Background" type="ColorRect" parent="."]
+margin_right = 640.0
+margin_bottom = 360.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="Particles2D" type="Particles2D" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 310, -18 )
+z_index = 1
+amount = 500
+randomness = 1.0
+process_material = SubResource( 25 )
+texture = ExtResource( 2 )
+
+[node name="Sway" parent="." instance=ExtResource( 6 )]
+script = ExtResource( 3 )
+NOISE_SHAKE_SPEED = 30.0
+NOISE_SWAY_SPEED = 0.2
+NOISE_SHAKE_STRENGTH = 60.0
+NOISE_SWAY_STRENGTH = 20.0
+RANDOM_SHAKE_STRENGTH = 30.0
+SHAKE_DECAY_RATE = 3.0
+
+[node name="TextureRect" type="TextureRect" parent="."]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = -25.0
+margin_top = -4.0
+margin_right = 669.0
+margin_bottom = 448.0
+texture = ExtResource( 1 )
+expand = true
+stretch_mode = 7
+
+[node name="Position2D" type="Position2D" parent="TextureRect"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 366, 76 )
+
+[node name="Title" parent="TextureRect/Position2D" instance=ExtResource( 5 )]
+margin_right = 274.0
+margin_bottom = 67.9999
+stretch_mode = 7
+
+[node name="AnimationPlayer" parent="TextureRect/Position2D/Title" index="0"]
+anims/RESET = SubResource( 27 )
+anims/SLIDE = SubResource( 28 )
+
+[node name="ColorRect2" type="ColorRect" parent="TextureRect"]
+visible = false
+material = SubResource( 29 )
+margin_right = 640.0
+margin_bottom = 360.0
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 30 )
+
+[node name="LightningTimer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+autostart = true
+
+[node name="OpeningCamera" parent="." instance=ExtResource( 7 )]
+current = true
+
+[node name="Sprite" parent="OpeningCamera" index="0"]
+modulate = Color( 1, 1, 1, 1 )
+self_modulate = Color( 1, 1, 1, 1 )
+position = Vector2( -2.04146e-05, 0 )
+scale = Vector2( 0.333333, 0.333 )
+
+[node name="AnimationPlayer" parent="OpeningCamera" index="1"]
+anims/CLOSE = SubResource( 21 )
+anims/OPEN = SubResource( 22 )
+anims/RESET = SubResource( 23 )
+
+[connection signal="timeout" from="LightningTimer" to="." method="ground_zeroes_lightning"]
+
+[editable path="TextureRect/Position2D/Title"]
+[editable path="OpeningCamera"]

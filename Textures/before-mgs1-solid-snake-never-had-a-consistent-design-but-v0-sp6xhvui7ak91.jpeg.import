@@ -1,0 +1,37 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path.s3tc="res://.import/before-mgs1-solid-snake-never-had-a-consistent-design-but-v0-sp6xhvui7ak91.jpeg-3f9e8f9bc849bc8098e5d6da48d969ce.s3tc.stex"
+path.etc2="res://.import/before-mgs1-solid-snake-never-had-a-consistent-design-but-v0-sp6xhvui7ak91.jpeg-3f9e8f9bc849bc8098e5d6da48d969ce.etc2.stex"
+metadata={
+"imported_formats": [ "s3tc", "etc2" ],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://Textures/before-mgs1-solid-snake-never-had-a-consistent-design-but-v0-sp6xhvui7ak91.jpeg"
+dest_files=[ "res://.import/before-mgs1-solid-snake-never-had-a-consistent-design-but-v0-sp6xhvui7ak91.jpeg-3f9e8f9bc849bc8098e5d6da48d969ce.s3tc.stex", "res://.import/before-mgs1-solid-snake-never-had-a-consistent-design-but-v0-sp6xhvui7ak91.jpeg-3f9e8f9bc849bc8098e5d6da48d969ce.etc2.stex" ]
+
+[params]
+
+compress/mode=2
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+process/normal_map_invert_y=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

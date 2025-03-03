@@ -1,0 +1,599 @@
+[gd_scene load_steps=27 format=2]
+
+[ext_resource path="res://Shaders/Gradient.tres" type="Material" id=1]
+[ext_resource path="res://Textures/VPoaVLN.png" type="Texture" id=2]
+[ext_resource path="res://Textures/Spamrk.png" type="Texture" id=3]
+[ext_resource path="res://Textures/2x1_NSwitchDS_MetalGearSolidMasterCollectionVersion_image1600w.png" type="Texture" id=4]
+[ext_resource path="res://Sway.gd" type="Script" id=5]
+[ext_resource path="res://Game.gd" type="Script" id=6]
+[ext_resource path="res://Sway.tscn" type="PackedScene" id=7]
+[ext_resource path="res://LoadingScreen.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Textures/1200px-Metal_Gear_Solid_logo.png" type="Texture" id=9]
+[ext_resource path="res://Font/METAG___.TTF" type="DynamicFontData" id=10]
+[ext_resource path="res://Textures/SeekPng.com_soft-png_4221431.png" type="Texture" id=11]
+
+[sub_resource type="Animation" id=44]
+resource_local_to_scene = true
+resource_name = "OPEN"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath("MoveableObject:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 0.5, 2 ),
+"update": 0,
+"values": [ Vector2( -654.328, 0 ), Vector2( -0.597, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Title:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 0.5, 2 ),
+"update": 0,
+"values": [ Vector2( 227, -143 ), Vector2( 232.836, 20.8955 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Vignette:self_modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 0.5, 2 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("MoveableObject/TextureRect:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Watermark/Light2D:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Watermark/Light2D:color")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0.509804 ) ]
+}
+
+[sub_resource type="Animation" id=45]
+resource_local_to_scene = true
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Position2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 666, -323 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Position2D2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -654.328, 2 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("TextureRect:self_modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Position2D2/TextureRect:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Position2D3/Light2D:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Position2D3/Light2D:color")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0.509804 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Title:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 227, -143 ) ]
+}
+
+[sub_resource type="DynamicFont" id=46]
+font_data = ExtResource( 10 )
+
+[sub_resource type="Animation" id=47]
+resource_name = "FLASH"
+length = 0.9
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 0.5, -0.5, 2 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=48]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=49]
+resource_local_to_scene = true
+resource_name = "CLOSE"
+tracks/0/type = "value"
+tracks/0/path = NodePath("OpeningCamera/Sprite:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 2, 2, 2 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("OpeningCamera/Sprite:self_modulate")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.5, 1 ),
+"transitions": PoolRealArray( 2, 2 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 1 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "exit"
+} ]
+}
+tracks/3/type = "method"
+tracks/3/path = NodePath(".")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray(  ),
+"transitions": PoolRealArray(  ),
+"values": [  ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Camera2D2:current")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("OpeningCamera:current")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0.5 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=50]
+resource_local_to_scene = true
+resource_name = "OPEN"
+tracks/0/type = "value"
+tracks/0/path = NodePath("OpeningCamera/Sprite:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 2, 2, 2 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("OpeningCamera/Sprite:self_modulate")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 2, 2 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.7 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "start"
+} ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("OpeningCamera:current")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Camera2D2:current")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0.5 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=51]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("OpeningCamera/Sprite:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("OpeningCamera/Sprite:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("WorldEnvironment:environment:tonemap_exposure")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 1.0 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("OpeningCamera:current")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Camera2D2:current")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+
+[sub_resource type="Shader" id=59]
+code = "shader_type canvas_item;
+
+uniform float whitening;
+
+void fragment() {
+    vec4 texture_color = texture(TEXTURE, UV);
+    COLOR = vec4(mix(texture_color.rgb, vec3(1,1,1), whitening), texture_color.a);
+}"
+
+[sub_resource type="ShaderMaterial" id=52]
+shader = SubResource( 59 )
+shader_param/whitening = 1.0
+
+[sub_resource type="Gradient" id=54]
+interpolation_mode = 2
+offsets = PoolRealArray( 0, 0.59116, 1 )
+colors = PoolColorArray( 1, 1, 1, 0.537255, 1, 1, 1, 0.504604, 1, 1, 1, 0 )
+
+[sub_resource type="GradientTexture" id=60]
+gradient = SubResource( 54 )
+
+[sub_resource type="Curve" id=56]
+min_value = -200.0
+max_value = 200.0
+_data = [ Vector2( 0, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 200 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=61]
+curve = SubResource( 56 )
+
+[sub_resource type="ParticlesMaterial" id=58]
+emission_shape = 2
+emission_box_extents = Vector3( 300, 300, 1 )
+flag_disable_z = true
+direction = Vector3( 1, 1, 0 )
+spread = 0.0
+gravity = Vector3( 0, 200, 0 )
+initial_velocity = -4.7
+orbit_velocity = -0.03
+orbit_velocity_random = 0.0
+linear_accel = 91.23
+linear_accel_curve = SubResource( 61 )
+radial_accel = 29.82
+angle = -12.1
+angle_random = 0.36
+scale = 0.57
+scale_random = 0.28
+color_ramp = SubResource( 60 )
+
+[node name="Mgs1Game" type="Node2D"]
+script = ExtResource( 6 )
+Song = 39
+GamePath = "\"C:\\Users\\kwnst\\Documents\\MGS LAUNCHER\\Paths\\METAL GEAR SOLID 1 INTEGRAL.lnk\""
+MoveableObject = NodePath("Watermark")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "FLASH"
+anims/OPEN = SubResource( 44 )
+anims/RESET = SubResource( 45 )
+
+[node name="Background" type="ColorRect" parent="."]
+light_mask = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 640.0
+margin_bottom = 360.0
+
+[node name="MoveableObject" type="Position2D" parent="."]
+light_mask = 2
+position = Vector2( -0.597, 0 )
+
+[node name="TextureRect" type="TextureRect" parent="MoveableObject"]
+light_mask = 4
+margin_left = -1.0
+margin_top = -3.0
+margin_right = 406.0
+margin_bottom = 362.0
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 6
+
+[node name="ColorRect" type="ColorRect" parent="MoveableObject/TextureRect"]
+light_mask = 2
+material = ExtResource( 1 )
+margin_left = -1.0
+margin_top = -2.0
+margin_right = 641.0
+margin_bottom = 364.0
+
+[node name="Title" type="Position2D" parent="."]
+position = Vector2( 227, -143 )
+
+[node name="TextureRect" type="TextureRect" parent="Title"]
+margin_left = -6.0
+margin_top = 10.0
+margin_right = 388.0
+margin_bottom = 124.0
+texture = ExtResource( 9 )
+expand = true
+stretch_mode = 6
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Label" type="Label" parent="Title/TextureRect"]
+modulate = Color( 0.87451, 0.0156863, 0.0470588, 1 )
+self_modulate = Color( 1, 1, 1, 0 )
+margin_top = 104.0
+margin_right = 382.0
+margin_bottom = 125.0
+custom_fonts/font = SubResource( 46 )
+text = "PRESS ENTER TO START"
+align = 1
+valign = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Title/TextureRect/Label"]
+autoplay = "FLASH"
+anims/FLASH = SubResource( 47 )
+anims/RESET = SubResource( 48 )
+
+[node name="OpeningCamera" parent="." instance=ExtResource( 8 )]
+light_mask = 0
+current = true
+
+[node name="Sprite" parent="OpeningCamera" index="0"]
+modulate = Color( 1, 1, 1, 1 )
+self_modulate = Color( 1, 1, 1, 1 )
+light_mask = 0
+
+[node name="ColorRect" parent="OpeningCamera/Sprite" index="0"]
+light_mask = 0
+
+[node name="AnimationPlayer" parent="OpeningCamera" index="1"]
+anims/CLOSE = SubResource( 49 )
+anims/OPEN = SubResource( 50 )
+anims/RESET = SubResource( 51 )
+
+[node name="Watermark" type="Position2D" parent="."]
+position = Vector2( 0, 1 )
+
+[node name="Light2D" type="Light2D" parent="Watermark"]
+position = Vector2( 347, 236 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 2 )
+color = Color( 1, 1, 1, 0.509804 )
+mode = 2
+range_item_cull_mask = 2
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Vignette" type="TextureRect" parent="."]
+modulate = Color( 0.87451, 0.0156863, 0.0470588, 1 )
+material = SubResource( 52 )
+margin_right = 640.0
+margin_bottom = 360.0
+texture = ExtResource( 11 )
+expand = true
+stretch_mode = 7
+
+[node name="Sway" parent="." instance=ExtResource( 7 )]
+script = ExtResource( 5 )
+NOISE_SHAKE_SPEED = 30.0
+NOISE_SWAY_SPEED = 0.2
+NOISE_SHAKE_STRENGTH = 60.0
+NOISE_SWAY_STRENGTH = 20.0
+RANDOM_SHAKE_STRENGTH = 30.0
+SHAKE_DECAY_RATE = 3.0
+
+[node name="Particles2D" type="Particles2D" parent="."]
+position = Vector2( 421, -32 )
+scale = Vector2( 1, 0.4 )
+amount = 100
+lifetime = 3.0
+visibility_rect = Rect2( -100, -100, 300, 500 )
+process_material = SubResource( 58 )
+texture = ExtResource( 3 )
+
+[editable path="OpeningCamera"]
